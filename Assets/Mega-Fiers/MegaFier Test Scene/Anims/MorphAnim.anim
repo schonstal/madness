@@ -1,0 +1,102 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!74 &7400000
+AnimationClip:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: MorphAnim
+  serializedVersion: 3
+  m_Compressed: 0
+  m_RotationCurves: []
+  m_CompressedRotationCurves: []
+  m_PositionCurves: []
+  m_ScaleCurves: []
+  m_FloatCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 29.1970787
+        outSlope: 29.1970787
+        tangentMode: 10
+      - time: 1.66666663
+        value: 48.6617966
+        inSlope: 29.1970787
+        outSlope: 29.1970787
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: Percent
+    path: 
+    classID: 114
+    script: {fileID: 11500000, guid: 41e875eb608bfd7468f96bc1b6efd28e, type: 1}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 51.3891525
+        inSlope: -30.1014118
+        outSlope: -30.1014118
+        tangentMode: 10
+      - time: 1.66666663
+        value: 1.22013474
+        inSlope: -30.1014118
+        outSlope: -30.1014118
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: Percent1
+    path: 
+    classID: 114
+    script: {fileID: 11500000, guid: 41e875eb608bfd7468f96bc1b6efd28e, type: 1}
+  m_SampleRate: 60
+  m_WrapMode: 2
+  m_Bounds:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
+  m_EditorCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 29.1970787
+        outSlope: 29.1970787
+        tangentMode: 10
+      - time: 1.66666663
+        value: 48.6617966
+        inSlope: 29.1970787
+        outSlope: 29.1970787
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: Percent
+    path: 
+    classID: 114
+    script: {fileID: 11500000, guid: 41e875eb608bfd7468f96bc1b6efd28e, type: 1}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 51.3891525
+        inSlope: -30.1014118
+        outSlope: -30.1014118
+        tangentMode: 10
+      - time: 1.66666663
+        value: 1.22013474
+        inSlope: -30.1014118
+        outSlope: -30.1014118
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: Percent1
+    path: 
+    classID: 114
+    script: {fileID: 11500000, guid: 41e875eb608bfd7468f96bc1b6efd28e, type: 1}
+  m_EulerEditorCurves: []
+  m_Events: []
+--- !u!1002 &7400001
+EditorExtensionImpl:
+  serializedVersion: 6

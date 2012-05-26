@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{338D30C1-DF9E-D9A6-43E6-68CB24A63D95}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_3_5_2;UNITY_3_5;UNITY_EDITOR;ENABLE_PROFILER;UNITY_STANDALONE_OSX;ENABLE_GENERICS;ENABLE_DUCK_TYPING;ENABLE_TERRAIN;ENABLE_MOVIES;ENABLE_WEBCAM;ENABLE_MICROPHONE;ENABLE_NETWORK;ENABLE_CLOTH;ENABLE_WWW;ENABLE_SUBSTANCE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="UnityEngine">
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\HSBColor.cs" />
+     <Compile Include="Assets\HerpDerp.cs" />
+     <Compile Include="Assets\LookAt.cs" />
+     <Compile Include="Assets\Mega-Fiers\MegaFier Test Scene\Scripts\BallBounce.cs" />
+     <Compile Include="Assets\Mega-Fiers\MegaFier Test Scene\Scripts\KDTree.cs" />
+     <Compile Include="Assets\Mega-Fiers\MegaFier Test Scene\Scripts\MOrbit.cs" />
+     <Compile Include="Assets\Mega-Fiers\MegaFier Test Scene\Scripts\MatchShape.cs" />
+     <Compile Include="Assets\Mega-Fiers\MegaFier Test Scene\Scripts\MegaCurveDeform.cs" />
+     <Compile Include="Assets\Mega-Fiers\MegaFier Test Scene\Scripts\MegaDeform.cs" />
+     <Compile Include="Assets\Mega-Fiers\MegaFier Test Scene\Scripts\MegaGUI.cs" />
+     <Compile Include="Assets\Mega-Fiers\MegaFier Test Scene\Scripts\MegaRopeDeform.cs" />
+     <Compile Include="Assets\Mega-Fiers\MegaFier Test Scene\Scripts\MegaSoft2D.cs" />
+     <Compile Include="Assets\Mega-Fiers\MegaFier Test Scene\Scripts\NearestPoint.cs" />
+     <Compile Include="Assets\Mega-Fiers\MegaFier Test Scene\Scripts\PathFollow.cs" />
+     <Compile Include="Assets\Mega-Fiers\MegaFier Test Scene\Scripts\PyramidMesh.cs" />
+     <Compile Include="Assets\Mega-Fiers\MegaFier Test Scene\Scripts\Scroll.cs" />
+     <Compile Include="Assets\Mega-Fiers\MegaFier Test Scene\Scripts\SoftBody.cs" />
+     <Compile Include="Assets\Mega-Fiers\MegaFier Test Scene\Scripts\ToggleMultiCore.cs" />
+     <Compile Include="Assets\Mega-Fiers\MegaFier Test Scene\Scripts\WalkBridge.cs" />
+     <Compile Include="Assets\Mega-Fiers\MegaFier Test Scene\Scripts\WalkRope.cs" />
+     <Compile Include="Assets\Mega-Fiers\Scripts\MegaFiers\MegaBook.cs" />
+     <Compile Include="Assets\Mega-Fiers\Scripts\MegaFiers\MegaBox3.cs" />
+     <Compile Include="Assets\Mega-Fiers\Scripts\MegaFiers\MegaControllers\MegaBezFloatKeyControl.cs" />
+     <Compile Include="Assets\Mega-Fiers\Scripts\MegaFiers\MegaControllers\MegaBezVector3KeyControl.cs" />
+     <Compile Include="Assets\Mega-Fiers\Scripts\MegaFiers\MegaControllers\MegaControl.cs" />
+     <Compile Include="Assets\Mega-Fiers\Scripts\MegaFiers\MegaMatrix.cs" />
+     <Compile Include="Assets\Mega-Fiers\Scripts\MegaFiers\MegaPerlin.cs" />
+     <Compile Include="Assets\Mega-Fiers\Scripts\MegaFiers\MegaShape\MegaMeshPage.cs" />
+     <Compile Include="Assets\Mega-Fiers\Scripts\MegaFiers\MegaShape\MegaShape.cs" />
+     <Compile Include="Assets\Mega-Fiers\Scripts\MegaFiers\MegaShape\MegaShapeArc.cs" />
+     <Compile Include="Assets\Mega-Fiers\Scripts\MegaFiers\MegaShape\MegaShapeCircle.cs" />
+     <Compile Include="Assets\Mega-Fiers\Scripts\MegaFiers\MegaShape\MegaShapeEllipse.cs" />
+     <Compile Include="Assets\Mega-Fiers\Scripts\MegaFiers\MegaShape\MegaShapeHelix.cs" />
+     <Compile Include="Assets\Mega-Fiers\Scripts\MegaFiers\MegaShape\MegaShapeNGon.cs" />
+     <Compile Include="Assets\Mega-Fiers\Scripts\MegaFiers\MegaShape\MegaShapeRectangle.cs" />
+     <Compile Include="Assets\Mega-Fiers\Scripts\MegaFiers\MegaShape\MegaShapeStar.cs" />
+     <Compile Include="Assets\Mega-Fiers\Scripts\MegaFiers\MegaUtils.cs" />
+     <Compile Include="Assets\Mega-Fiers\Scripts\MegaFiers\Modifiers\MegaBend.cs" />
+     <Compile Include="Assets\Mega-Fiers\Scripts\MegaFiers\Modifiers\MegaBubble.cs" />
+     <Compile Include="Assets\Mega-Fiers\Scripts\MegaFiers\Modifiers\MegaBulge.cs" />
+     <Compile Include="Assets\Mega-Fiers\Scripts\MegaFiers\Modifiers\MegaCrumple.cs" />
+     <Compile Include="Assets\Mega-Fiers\Scripts\MegaFiers\Modifiers\MegaCylindrify.cs" />
+     <Compile Include="Assets\Mega-Fiers\Scripts\MegaFiers\Modifiers\MegaDisplace.cs" />
+     <Compile Include="Assets\Mega-Fiers\Scripts\MegaFiers\Modifiers\MegaFFD.cs" />
+     <Compile Include="Assets\Mega-Fiers\Scripts\MegaFiers\Modifiers\MegaFFD2x2x2.cs" />
+     <Compile Include="Assets\Mega-Fiers\Scripts\MegaFiers\Modifiers\MegaFFD3x3x3.cs" />
+     <Compile Include="Assets\Mega-Fiers\Scripts\MegaFiers\Modifiers\MegaFFD4x4x4.cs" />
+     <Compile Include="Assets\Mega-Fiers\Scripts\MegaFiers\Modifiers\MegaHump.cs" />
+     <Compile Include="Assets\Mega-Fiers\Scripts\MegaFiers\Modifiers\MegaMelt.cs" />
+     <Compile Include="Assets\Mega-Fiers\Scripts\MegaFiers\Modifiers\MegaModifier.cs" />
+     <Compile Include="Assets\Mega-Fiers\Scripts\MegaFiers\Modifiers\MegaModifiers.cs" />
+     <Compile Include="Assets\Mega-Fiers\Scripts\MegaFiers\Modifiers\MegaModifyGroup.cs" />
+     <Compile Include="Assets\Mega-Fiers\Scripts\MegaFiers\Modifiers\MegaModifyObject.cs" />
+     <Compile Include="Assets\Mega-Fiers\Scripts\MegaFiers\Modifiers\MegaMorph\MegaMorphOMatic.cs" />
+     <Compile Include="Assets\Mega-Fiers\Scripts\MegaFiers\Modifiers\MegaNoise.cs" />
+     <Compile Include="Assets\Mega-Fiers\Scripts\MegaFiers\Modifiers\MegaPageFlip.cs" />
+     <Compile Include="Assets\Mega-Fiers\Scripts\MegaFiers\Modifiers\MegaPaint.cs" />
+     <Compile Include="Assets\Mega-Fiers\Scripts\MegaFiers\Modifiers\MegaPathDeform.cs" />
+     <Compile Include="Assets\Mega-Fiers\Scripts\MegaFiers\Modifiers\MegaPivotAdjust.cs" />
+     <Compile Include="Assets\Mega-Fiers\Scripts\MegaFiers\Modifiers\MegaPointCache.cs" />
+     <Compile Include="Assets\Mega-Fiers\Scripts\MegaFiers\Modifiers\MegaPush.cs" />
+     <Compile Include="Assets\Mega-Fiers\Scripts\MegaFiers\Modifiers\MegaRadialSkew.cs" />
+     <Compile Include="Assets\Mega-Fiers\Scripts\MegaFiers\Modifiers\MegaRipple.cs" />
+     <Compile Include="Assets\Mega-Fiers\Scripts\MegaFiers\Modifiers\MegaRubber.cs" />
+     <Compile Include="Assets\Mega-Fiers\Scripts\MegaFiers\Modifiers\MegaSimpleMod.cs" />
+     <Compile Include="Assets\Mega-Fiers\Scripts\MegaFiers\Modifiers\MegaSinusCurve.cs" />
+     <Compile Include="Assets\Mega-Fiers\Scripts\MegaFiers\Modifiers\MegaSkew.cs" />
+     <Compile Include="Assets\Mega-Fiers\Scripts\MegaFiers\Modifiers\MegaSpherify.cs" />
+     <Compile Include="Assets\Mega-Fiers\Scripts\MegaFiers\Modifiers\MegaStretch.cs" />
+     <Compile Include="Assets\Mega-Fiers\Scripts\MegaFiers\Modifiers\MegaTaper.cs" />
+     <Compile Include="Assets\Mega-Fiers\Scripts\MegaFiers\Modifiers\MegaTwist.cs" />
+     <Compile Include="Assets\Mega-Fiers\Scripts\MegaFiers\Modifiers\MegaVertNoise.cs" />
+     <Compile Include="Assets\Mega-Fiers\Scripts\MegaFiers\Modifiers\MegaVertexAnim.cs" />
+     <Compile Include="Assets\Mega-Fiers\Scripts\MegaFiers\Modifiers\MegaWave.cs" />
+     <Compile Include="Assets\Mega-Fiers\Scripts\MegaFiers\Modifiers\MegaWorldPathDeform.cs" />
+     <Compile Include="Assets\Mega-Fiers\Scripts\MegaFiers\Modifiers\Morph\MegaMorph.cs" />
+     <Compile Include="Assets\Mega-Fiers\Scripts\MegaFiers\Modifiers\Morph\MegaMorphAnim.cs" />
+     <Compile Include="Assets\Mega-Fiers\Scripts\MegaFiers\Modifiers\Morph\MegaMorphAnimator.cs" />
+     <Compile Include="Assets\Mega-Fiers\Scripts\MegaFiers\Modifiers\Morph\MegaMorphChan.cs" />
+     <Compile Include="Assets\Mega-Fiers\Scripts\MegaFiers\Modifiers\Morph\MegaMorphTarget.cs" />
+     <Compile Include="Assets\Mega-Fiers\Scripts\MegaFiers\Modifiers\Selection\MegaSelection.cs" />
+     <Compile Include="Assets\Mega-Fiers\Scripts\MegaFiers\Modifiers\Selection\MegaVertColSelect.cs" />
+     <Compile Include="Assets\Mega-Fiers\Scripts\MegaFiers\Modifiers\Selection\MegaVolSelect.cs" />
+     <Compile Include="Assets\Mega-Fiers\Scripts\MegaFiers\Modifiers\UVMods\MegaUVAdjust.cs" />
+     <Compile Include="Assets\Mega-Fiers\Scripts\MegaFiers\Modifiers\UVMods\MegaUVTiles.cs" />
+     <Compile Include="Assets\Mega-Fiers\Scripts\MegaFiers\Modifiers\Warps\MegaBendWarp.cs" />
+     <Compile Include="Assets\Mega-Fiers\Scripts\MegaFiers\Modifiers\Warps\MegaNoiseWarp.cs" />
+     <Compile Include="Assets\Mega-Fiers\Scripts\MegaFiers\Modifiers\Warps\MegaRippleWarp.cs" />
+     <Compile Include="Assets\Mega-Fiers\Scripts\MegaFiers\Modifiers\Warps\MegaSkewWarp.cs" />
+     <Compile Include="Assets\Mega-Fiers\Scripts\MegaFiers\Modifiers\Warps\MegaStretchWarp.cs" />
+     <Compile Include="Assets\Mega-Fiers\Scripts\MegaFiers\Modifiers\Warps\MegaTaperWarp.cs" />
+     <Compile Include="Assets\Mega-Fiers\Scripts\MegaFiers\Modifiers\Warps\MegaTwistWarp.cs" />
+     <Compile Include="Assets\Mega-Fiers\Scripts\MegaFiers\Modifiers\Warps\MegaWarp.cs" />
+     <Compile Include="Assets\Mega-Fiers\Scripts\MegaFiers\Modifiers\Warps\MegaWarpBind.cs" />
+     <Compile Include="Assets\Mega-Fiers\Scripts\MegaFiers\Modifiers\Warps\MegaWaveWarp.cs" />
+     <Compile Include="Assets\Movement.cs" />
+     <Compile Include="Assets\RagePixel\Code\IRagePixel.cs" />
+     <Compile Include="Assets\RagePixel\Code\RagePixelAnimation.cs" />
+     <Compile Include="Assets\RagePixel\Code\RagePixelBitmap.cs" />
+     <Compile Include="Assets\RagePixel\Code\RagePixelCamera.cs" />
+     <Compile Include="Assets\RagePixel\Code\RagePixelCell.cs" />
+     <Compile Include="Assets\RagePixel\Code\RagePixelRow.cs" />
+     <Compile Include="Assets\RagePixel\Code\RagePixelSettings.cs" />
+     <Compile Include="Assets\RagePixel\Code\RagePixelSprite.cs" />
+     <Compile Include="Assets\RagePixel\Code\RagePixelSpriteSheet.cs" />
+     <Compile Include="Assets\RagePixel\Demo\Walker.cs" />
+     <Compile Include="Assets\Scripts\SoundManager.cs" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BlendOneOne.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\NoiseEffectShaderRGB.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\SeparableWeightedBlurDof34.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ShowAlphaChannel.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\GlowConeTap.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\SunShaftsComposite.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ColorCorrectionCurves.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\NFAA.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\VignetteShader.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\DepthOfFieldScatter.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\MotionBlur.shader" />
+     <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\GlowCompose.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\Contrast Stretch\MinMaxReduction.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\SSAA.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\RadialBlur.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ContrastComposite.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\FXAAPreset3.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\FisheyeShader.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\Contrast Stretch\Apply.shader" />
+     <None Include="Assets\Standard Assets\Water (Pro Only)\Water4\Sources\Shaders\FX-SimpleWater4.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\frag_ao.cginc" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\DepthOfField34.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\TiltShift.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\SSAOShader.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ConvertDepth.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ColorCorrectionCurvesSimple.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\NoiseEffectShaderYUV.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\GlowEffectDownsample.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\CreaseApply.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ChromaticAberrationShader.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\GlobalFog.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\Contrast Stretch\Luminance.shader" />
+     <None Include="Assets\RagePixel\readme.txt" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ColorCorrectionSelective.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\Bokeh34.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\SeparableBlurPlus.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\MultiPassHollywoodFlares.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\BlurEffectConeTaps.shader" />
+     <None Include="Assets\Mega-Fiers\ReadMe.txt" />
+     <None Include="Assets\Standard Assets\Water (Pro Only)\Sources\Shaders\FX-Water.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\DLAA.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\SeparableBlur.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ColorCorrectionEffect.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\GrayscaleEffect.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\SepiaToneEffect.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\TwirlEffect.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\VortexEffect.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\Contrast Stretch\Adaptation.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\NoiseAndGrain.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\VignettingShader.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\Tonemapper.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BrightPassFilter.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\FXAA2.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\LensFlareCreate.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\EdgeDetectNormals.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\PrepareSunShaftsBlur.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\Blend.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\BlendModesOverlay.shader" />
+     <None Include="Assets\Standard Assets\Water (Pro Only)\Water4\Sources\Shaders\WaterInclude.cginc" />
+     <None Include="Assets\Standard Assets\Water (Pro Only)\Water4\Sources\Shaders\FX-Water4.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\SimpleClear.shader" />
+     <None Include="Assets\RagePixel\Code\RagePixelBasicFlash.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\FXAA3Console.shader" />
+     <None Include="Assets\RagePixel\Code\RagePixelBasic.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\EdgeDetectX.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\FXAAPreset2.shader" />
+ <Reference Include="Library\ScriptAssemblies\Assembly-UnityScript-firstpass">
+ <HintPath>Library\ScriptAssemblies\Assembly-UnityScript-firstpass.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass-vs.csproj">
+      <Project>{B069161C-BC60-185A-4C9D-356D3730EEBC}</Project>      <Name>Assembly-CSharp-firstpass-vs</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>

@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!74 &7400000
+AnimationClip:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Morph
+  serializedVersion: 3
+  m_Compressed: 0
+  m_RotationCurves: []
+  m_CompressedRotationCurves: []
+  m_PositionCurves: []
+  m_ScaleCurves: []
+  m_FloatCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 66.6666641
+        outSlope: 66.6666641
+        tangentMode: 10
+      - time: 1.5
+        value: 100
+        inSlope: -9.52380753
+        outSlope: -9.52380753
+        tangentMode: 10
+      - time: 2.66666675
+        value: 0
+        inSlope: -85.7142792
+        outSlope: -85.7142792
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: Percent
+    path: 
+    classID: 114
+    script: {fileID: 11500000, guid: 41e875eb608bfd7468f96bc1b6efd28e, type: 1}
+  m_SampleRate: 60
+  m_WrapMode: 2
+  m_Bounds:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
+  m_EditorCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 66.6666641
+        outSlope: 66.6666641
+        tangentMode: 10
+      - time: 1.5
+        value: 100
+        inSlope: -9.52380753
+        outSlope: -9.52380753
+        tangentMode: 10
+      - time: 2.66666675
+        value: 0
+        inSlope: -85.7142792
+        outSlope: -85.7142792
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: Percent
+    path: 
+    classID: 114
+    script: {fileID: 11500000, guid: 41e875eb608bfd7468f96bc1b6efd28e, type: 1}
+  m_EulerEditorCurves: []
+  m_Events: []
+--- !u!1002 &7400001
+EditorExtensionImpl:
+  serializedVersion: 6
