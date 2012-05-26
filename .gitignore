@@ -1,0 +1,8 @@
+Temp
+*.csproj
+*.pidb
+*.sln
+*.unityproj
+*.userprefs
+*.tmproj
+Library/
