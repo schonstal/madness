@@ -5,4 +5,4 @@ Temp
 *.unityproj
 *.userprefs
 *.tmproj
-Library/
+Library/*
