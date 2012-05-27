@@ -5,10 +5,17 @@ using System.Collections.Generic;
 public class BulletManager : MonoBehaviour {
   public GameObject soundTarget;
   public GameObject bulletPrefab;
+  public GameObject gun;
   public float bulletSpeed = 100.0f;
+  public float soundThreshold = 0.6f;
+  public float soundVolume = 1.0f;
 
+  bool inPeak = false;
   SoundManager manager;
   Stack<GameObject> inactiveBullets;
+
+  float timer = 0f;
+
 
 	void Start() {
     inactiveBullets = new Stack<GameObject>();
@@ -17,8 +24,15 @@ public class BulletManager : MonoBehaviour {
 	
 	void Update() {
     if(Input.GetButton("Fire1")) {
-      manager.Volume = 1.0f;
-      SpawnBullet();
+      if(manager.OutputVolume > soundThreshold) {
+        if(!inPeak) {
+          inPeak = true;
+          SpawnBullet();
+        }
+      } else {
+        inPeak = false;
+      }
+      manager.Volume = soundVolume;
     } else {
       manager.Volume = 0f;
     }
@@ -36,6 +50,7 @@ public class BulletManager : MonoBehaviour {
     }  
     bullet.rigidbody.velocity = transform.forward * bulletSpeed; 
     bullet.GetComponent<Bullet>().manager = this;
+    gun.GetComponent<GunAnim>().Fire();
   }
 
   public void pushBullet(GameObject bullet) { 

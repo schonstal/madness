@@ -154,9 +154,9 @@
      <Compile Include="Assets\Scripts\AnimationManager.cs" />
      <Compile Include="Assets\Scripts\Bounce.cs" />
      <Compile Include="Assets\Scripts\Bullet.cs" />
-     <Compile Include="Assets\Scripts\BulletAnim.cs" />
      <Compile Include="Assets\Scripts\BulletManager.cs" />
      <Compile Include="Assets\Scripts\Flicker.cs" />
+     <Compile Include="Assets\Scripts\GunAnim.cs" />
      <Compile Include="Assets\Scripts\GunBob.cs" />
      <Compile Include="Assets\Scripts\GunManager.cs" />
      <Compile Include="Assets\Scripts\NewBehaviourScript.cs" />

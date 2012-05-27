@@ -143,7 +143,7 @@ GameObject:
   - 33: {fileID: 153844256}
   - 114: {fileID: 153844258}
   - 114: {fileID: 153844259}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: New Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -521,7 +521,7 @@ GameObject:
   - 33: {fileID: 774388846}
   - 65: {fileID: 774388847}
   - 23: {fileID: 774388845}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -686,7 +686,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 8200002, guid: 513e8acdc90764715b37d488237b414d, type: 2}
       propertyPath: m_PlayOnAwake
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400004, guid: 513e8acdc90764715b37d488237b414d, type: 2}
       propertyPath: getVolume
@@ -800,7 +800,7 @@ GameObject:
   - 4: {fileID: 974217034}
   - 114: {fileID: 974217035}
   - 114: {fileID: 974217036}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Spitter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -882,7 +882,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 3
   m_audioClip: {fileID: 8300000, guid: 85ea734b548974a6bb52d641843a26be, type: 1}
-  m_PlayOnAwake: 0
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 1
@@ -1049,6 +1049,50 @@ Mesh:
     m_Extent: {x: 16, y: 16, z: 0}
   m_MeshUsageFlags: 0
   m_MeshOptimized: 0
+--- !u!1 &1627208959
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 3
+  m_Component:
+  - 4: {fileID: 1627208960}
+  - 114: {fileID: 1627208961}
+  m_Layer: 0
+  m_Name: BulletSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1627208960
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1627208959}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -11.5101576, y: -16.3833618, z: 1.2484597}
+  m_LocalScale: {x: 200, y: 200, z: 6.66666651}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 1695303454}
+--- !u!114 &1627208961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1627208959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c173f7c94cf6405fa26e62684913248, type: 1}
+  m_Name: 
+  soundTarget: {fileID: 1081482499}
+  bulletPrefab: {fileID: 100002, guid: 999bde5282fb94baf993a8dff37ada0e, type: 2}
+  gun: {fileID: 2124679268}
+  bulletSpeed: 50
+  soundThreshold: .200000003
+  soundVolume: .25
 --- !u!1 &1648460797
 GameObject:
   m_ObjectHideFlags: 0
@@ -1158,7 +1202,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1695303454}
   - 114: {fileID: 1695303455}
-  - 114: {fileID: 1695303456}
   m_Layer: 0
   m_Name: GunContainer
   m_TagString: Untagged
@@ -1178,6 +1221,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 2124679269}
+  - {fileID: 1627208960}
   m_Father: {fileID: 812375621}
 --- !u!114 &1695303455
 MonoBehaviour:
@@ -1195,19 +1239,6 @@ MonoBehaviour:
   target: {fileID: 2074802821}
   minRunSpeed: 10
   returnToNeutralTime: .5
---- !u!114 &1695303456
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1695303453}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7c173f7c94cf6405fa26e62684913248, type: 1}
-  m_Name: 
-  soundTarget: {fileID: 1081482499}
-  bulletPrefab: {fileID: 400002, guid: 999bde5282fb94baf993a8dff37ada0e, type: 2}
-  bulletSpeed: 100
 --- !u!1 &1710363655
 GameObject:
   m_ObjectHideFlags: 0
@@ -1539,8 +1570,8 @@ GameObject:
   - 114: {fileID: 2124679272}
   - 23: {fileID: 2124679270}
   - 33: {fileID: 2124679271}
-  - 114: {fileID: 2124679273}
   - 114: {fileID: 2124679274}
+  - 114: {fileID: 2124679273}
   m_Layer: 0
   m_Name: New Sprite
   m_TagString: Untagged
@@ -1629,7 +1660,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2124679268}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a0828a13f92d34b3f85e86c2c826952f, type: 1}
+  m_Script: {fileID: 11500000, guid: 26b604a444aa44dcfb60cde8d37c7509, type: 1}
   m_Name: 
 --- !u!114 &2124679274
 MonoBehaviour:

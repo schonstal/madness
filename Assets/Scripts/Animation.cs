@@ -18,6 +18,11 @@ public class Animation {
 	}
 	
 	public void Play(float dt, bool forceRestart = false) {
+    if(forceRestart) {
+      timer = 0f;
+      frameIndex = 0;
+      finished = false;
+    }
     timer += dt;
     if(timer >= frameTime && !(!loops && finished)) {
       ragePixel.SetSprite(spriteName, frames[frameIndex]);
