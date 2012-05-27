@@ -1,0 +1,121 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e34ba3a905f8744d98003eb88ed60f3, type: 1}
+  m_Name: spritesheet_6
+  atlas: {fileID: 2100000, guid: c3a391732b0b549069b8f25a30f1c973, type: 2}
+  _rows:
+  - pixelSizeX: 32
+    pixelSizeY: 32
+    newPixelSizeX: 32
+    newPixelSizeY: 32
+    key: -534382405
+    name: Spitter
+    fontCharacter: 
+    fontYOffset: 0
+    _animations: []
+    _cells:
+    - key: 787205010
+      uv:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: .25
+        height: .125
+      delay: 200
+    - key: 2027897641
+      uv:
+        serializedVersion: 2
+        x: .2578125
+        y: 0
+        width: .25
+        height: .125
+      delay: 200
+    - key: -952670578
+      uv:
+        serializedVersion: 2
+        x: .515625
+        y: 0
+        width: .25
+        height: .125
+      delay: 200
+    - key: -1462283967
+      uv:
+        serializedVersion: 2
+        x: 0
+        y: .12890625
+        width: .25
+        height: .125
+      delay: 200
+    - key: 1737360336
+      uv:
+        serializedVersion: 2
+        x: .2578125
+        y: .12890625
+        width: .25
+        height: .125
+      delay: 200
+    - key: 1127045813
+      uv:
+        serializedVersion: 2
+        x: .515625
+        y: .12890625
+        width: .25
+        height: .125
+      delay: 200
+    - key: 1197581964
+      uv:
+        serializedVersion: 2
+        x: 0
+        y: .2578125
+        width: .25
+        height: .125
+      delay: 200
+    - key: -1389019418
+      uv:
+        serializedVersion: 2
+        x: .2578125
+        y: .2578125
+        width: .25
+        height: .125
+      delay: 200
+    - key: 39263975
+      uv:
+        serializedVersion: 2
+        x: .515625
+        y: .2578125
+        width: .25
+        height: .125
+      delay: 200
+    - key: 603049938
+      uv:
+        serializedVersion: 2
+        x: 0
+        y: .38671875
+        width: .25
+        height: .125
+      delay: 200
+    - key: 361398559
+      uv:
+        serializedVersion: 2
+        x: .2578125
+        y: .38671875
+        width: .25
+        height: .125
+      delay: 200
+    - key: -1489064741
+      uv:
+        serializedVersion: 2
+        x: .515625
+        y: .38671875
+        width: .25
+        height: .125
+      delay: 200
+  thumbnailSize: 40

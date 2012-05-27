@@ -17,10 +17,14 @@ MonoBehaviour:
     newPixelSizeX: 16
     newPixelSizeY: 16
     key: -2083680277
-    name: 
+    name: Stupid
     fontCharacter: 
     fontYOffset: 0
-    _animations: []
+    _animations:
+    - name: dsad
+      mode: 0
+      startIndex: 0
+      endIndex: 1
     _cells:
     - key: -896618887
       uv:
@@ -43,10 +47,14 @@ MonoBehaviour:
     newPixelSizeX: 16
     newPixelSizeY: 16
     key: -477374268
-    name: 
+    name: Default
     fontCharacter: 
     fontYOffset: 0
-    _animations: []
+    _animations:
+    - name: sfdsad
+      mode: 0
+      startIndex: 0
+      endIndex: 1
     _cells:
     - key: -1069223863
       uv:

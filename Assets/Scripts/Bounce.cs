@@ -21,6 +21,7 @@ public class Bounce : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
     float xOffset = manager.OutputVolume * amplitude.x;
+    Debug.Log(xOffset);
 
     transform.localScale = new Vector3(
         originalScale.x + xOffset,

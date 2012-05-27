@@ -158,8 +158,10 @@
      <Compile Include="Assets\Scripts\Flicker.cs" />
      <Compile Include="Assets\Scripts\GunBob.cs" />
      <Compile Include="Assets\Scripts\GunManager.cs" />
+     <Compile Include="Assets\Scripts\NewBehaviourScript.cs" />
      <Compile Include="Assets\Scripts\SoundManager.cs" />
      <Compile Include="Assets\Scripts\SoundManagerTest.cs" />
+     <Compile Include="Assets\Scripts\SpitterBrain.cs" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BlendOneOne.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\NoiseEffectShaderRGB.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\SeparableWeightedBlurDof34.shader" />
