@@ -150,7 +150,10 @@
      <Compile Include="Assets\RagePixel\Code\RagePixelSprite.cs" />
      <Compile Include="Assets\RagePixel\Code\RagePixelSpriteSheet.cs" />
      <Compile Include="Assets\RagePixel\Demo\Walker.cs" />
+     <Compile Include="Assets\Scripts\Animation.cs" />
      <Compile Include="Assets\Scripts\Bounce.cs" />
+     <Compile Include="Assets\Scripts\BulletAnim.cs" />
+     <Compile Include="Assets\Scripts\BulletManager.cs" />
      <Compile Include="Assets\Scripts\GunBob.cs" />
      <Compile Include="Assets\Scripts\GunManager.cs" />
      <Compile Include="Assets\Scripts\SoundManager.cs" />

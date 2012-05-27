@@ -38,7 +38,15 @@ MonoBehaviour:
     name: 
     fontCharacter: 
     fontYOffset: 0
-    _animations: []
+    _animations:
+    - name: Active
+      mode: 0
+      startIndex: 0
+      endIndex: 0
+    - name: Fired
+      mode: 0
+      startIndex: 1
+      endIndex: 4
     _cells:
     - key: -1691997608
       uv:

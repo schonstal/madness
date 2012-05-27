@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e34ba3a905f8744d98003eb88ed60f3, type: 1}
+  m_Name: spritesheet_4
+  atlas: {fileID: 2100000, guid: e2ce92d81e152429e890a116b6f058bf, type: 2}
+  _rows:
+  - pixelSizeX: 16
+    pixelSizeY: 16
+    newPixelSizeX: 16
+    newPixelSizeY: 16
+    key: 931825270
+    name: 
+    fontCharacter: 
+    fontYOffset: 0
+    _animations: []
+    _cells:
+    - key: 331514239
+      uv:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: .5
+        height: .25
+      delay: 200
+  - pixelSizeX: 16
+    pixelSizeY: 16
+    newPixelSizeX: 16
+    newPixelSizeY: 16
+    key: 9394548
+    name: 
+    fontCharacter: 
+    fontYOffset: 0
+    _animations: []
+    _cells:
+    - key: 1662219062
+      uv:
+        serializedVersion: 2
+        x: 0
+        y: .265625
+        width: .5
+        height: .25
+      delay: 200
+    - key: 117919771
+      uv:
+        serializedVersion: 2
+        x: 0
+        y: .53125
+        width: .5
+        height: .25
+      delay: 200
+  thumbnailSize: 40
