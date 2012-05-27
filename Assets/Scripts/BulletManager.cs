@@ -8,20 +8,37 @@ public class BulletManager : MonoBehaviour {
   public float bulletSpeed = 100.0f;
 
   SoundManager manager;
-  Stack<Transform> inactiveBullets;
+  Stack<GameObject> inactiveBullets;
 
 	void Start() {
-    inactiveBullets = new Stack<Transform>();
+    inactiveBullets = new Stack<GameObject>();
 	  manager = soundTarget.GetComponent<SoundManager>() as SoundManager;  
 	}
 	
 	void Update() {
     if(Input.GetButton("Fire1")) {
-      GameObject bullet = Instantiate(bulletPrefab, transform.position, transform.rotation) as GameObject;
-      bullet.rigidbody.velocity = transform.forward * bulletSpeed; 
       manager.Volume = 1.0f;
+      SpawnBullet();
     } else {
       manager.Volume = 0f;
     }
 	}
+
+  void SpawnBullet() {
+    GameObject bullet;
+    if (inactiveBullets.Count > 0) {
+      bullet = inactiveBullets.Pop();
+      bullet.SetActiveRecursively(true);
+      bullet.transform.position = transform.position;
+      bullet.transform.rotation = transform.rotation;
+    } else {
+      bullet = Instantiate(bulletPrefab, transform.position, transform.rotation) as GameObject;
+    }  
+    bullet.rigidbody.velocity = transform.forward * bulletSpeed; 
+    bullet.GetComponent<Bullet>().manager = this;
+  }
+
+  public void pushBullet(GameObject bullet) { 
+    inactiveBullets.Push(bullet);
+  }
 }
