@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e34ba3a905f8744d98003eb88ed60f3, type: 1}
+  m_Name: spritesheet_3
+  atlas: {fileID: 2100000, guid: a31f66892cbff4aabb04eda4e80afedd, type: 2}
+  _rows:
+  - pixelSizeX: 16
+    pixelSizeY: 16
+    newPixelSizeX: 16
+    newPixelSizeY: 16
+    key: -511324541
+    name: 
+    fontCharacter: 
+    fontYOffset: 0
+    _animations: []
+    _cells:
+    - key: 1583410164
+      uv:
+        serializedVersion: 2
+        x: .76171875
+        y: 0
+        width: .0625
+        height: .0625
+      delay: 200
+  - pixelSizeX: 64
+    pixelSizeY: 64
+    newPixelSizeX: 64
+    newPixelSizeY: 64
+    key: -2140314761
+    name: 
+    fontCharacter: 
+    fontYOffset: 0
+    _animations: []
+    _cells:
+    - key: -1691997608
+      uv:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: .25
+        height: .25
+      delay: 200
+    - key: 226390085
+      uv:
+        serializedVersion: 2
+        x: .25390625
+        y: 0
+        width: .25
+        height: .25
+      delay: 200
+    - key: 1279086136
+      uv:
+        serializedVersion: 2
+        x: .5078125
+        y: 0
+        width: .25
+        height: .25
+      delay: 200
+    - key: -1497344635
+      uv:
+        serializedVersion: 2
+        x: 0
+        y: .25390625
+        width: .25
+        height: .25
+      delay: 200
+    - key: 2018735510
+      uv:
+        serializedVersion: 2
+        x: 0
+        y: .5078125
+        width: .25
+        height: .25
+      delay: 200
+  thumbnailSize: 40

@@ -12,116 +12,22 @@ MonoBehaviour:
   m_Name: DemoSheet
   atlas: {fileID: 2100000, guid: 98f77cdf1d0ecdc4cb0ce19874caa50e, type: 2}
   _rows:
-  - pixelSizeX: 15
-    pixelSizeY: 17
-    newPixelSizeX: 15
-    newPixelSizeY: 17
-    key: 282336373
-    name: 
-    fontCharacter: 
-    fontYOffset: 0
-    _animations:
-    - name: STAY
-      mode: 4
-      startIndex: 0
-      endIndex: 1
-    - name: WALK
-      mode: 2
-      startIndex: 2
-      endIndex: 4
-    _cells:
-    - key: 1820510675
-      uv:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: .234375
-        height: .265625
-      delay: 1500
-    - key: -713385984
-      uv:
-        serializedVersion: 2
-        x: 0
-        y: .28125
-        width: .234375
-        height: .265625
-      delay: 200
-    - key: 2054891349
-      uv:
-        serializedVersion: 2
-        x: 0
-        y: .5625
-        width: .234375
-        height: .265625
-      delay: 150
-    - key: 1002234193
-      uv:
-        serializedVersion: 2
-        x: .25
-        y: 0
-        width: .234375
-        height: .265625
-      delay: 150
-    - key: -285750199
-      uv:
-        serializedVersion: 2
-        x: .5
-        y: 0
-        width: .234375
-        height: .265625
-      delay: 150
-  - pixelSizeX: 6
-    pixelSizeY: 5
-    newPixelSizeX: 6
-    newPixelSizeY: 5
-    key: 921205203
-    name: 
-    fontCharacter: 
-    fontYOffset: 0
-    _animations: []
-    _cells:
-    - key: 892518052
-      uv:
-        serializedVersion: 2
-        x: 0
-        y: .84375
-        width: .09375
-        height: .078125
-      delay: 200
-  - pixelSizeX: 6
-    pixelSizeY: 5
-    newPixelSizeX: 6
-    newPixelSizeY: 5
-    key: -217774787
-    name: 
-    fontCharacter: 
-    fontYOffset: 0
-    _animations: []
-    _cells:
-    - key: -740142489
-      uv:
-        serializedVersion: 2
-        x: .109375
-        y: .84375
-        width: .09375
-        height: .078125
-      delay: 200
   - pixelSizeX: 24
     pixelSizeY: 7
     newPixelSizeX: 24
     newPixelSizeY: 7
-    key: -1274443110
+    key: -1852988205
     name: 
     fontCharacter: 
     fontYOffset: 0
     _animations: []
     _cells:
-    - key: 114741973
+    - key: 1808755496
       uv:
         serializedVersion: 2
-        x: .25
-        y: .28125
-        width: .375
-        height: .109375
+        x: 0
+        y: 0
+        width: .75
+        height: .21875
       delay: 200
   thumbnailSize: 40
