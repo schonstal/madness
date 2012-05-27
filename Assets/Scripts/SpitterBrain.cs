@@ -16,8 +16,8 @@ public class SpitterBrain : MonoBehaviour {
 	  soundManager = soundTarget.GetComponent<SoundManager>() as SoundManager;  
 
     animationManager = GetComponent<AnimationManager>() as AnimationManager;
-    animationManager.AddAnimation("FlyDown", new int[] {0,1,2}, 9f);
-    animationManager.AddAnimation("FlyUp", new int[] {3,4,5}, 9f);
+    animationManager.AddAnimation("FlyDown", new int[] {1,2,3}, 9f);
+    animationManager.AddAnimation("FlyUp", new int[] {4,5,0}, 9f);
 	}
 	
 	void Update () {
