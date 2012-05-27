@@ -30,4 +30,10 @@ public class AnimationManager : MonoBehaviour {
     currentAnimation = name;
     forceRestart = fRestart;
   }
+
+  public bool Finished {
+    get {
+      return animations[currentAnimation].finished;
+    }
+  }
 }

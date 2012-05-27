@@ -2,12 +2,12 @@ public class Animation {
   public float frameTime;
   public int[] frames;
   public string spriteName;
+  public bool finished;
 
   IRagePixel ragePixel;
   float timer = 0f;
   int frameIndex = 0;
   bool loops;
-  bool finished;
 
 	public Animation(IRagePixel rage, string name, int[] frameArray, float framerate, bool loop = true) {
     ragePixel = rage;
