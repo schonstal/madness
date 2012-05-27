@@ -155,6 +155,7 @@
      <Compile Include="Assets\Scripts\Bounce.cs" />
      <Compile Include="Assets\Scripts\Bullet.cs" />
      <Compile Include="Assets\Scripts\BulletManager.cs" />
+     <Compile Include="Assets\Scripts\EnemySpawner.cs" />
      <Compile Include="Assets\Scripts\Flicker.cs" />
      <Compile Include="Assets\Scripts\GunAnim.cs" />
      <Compile Include="Assets\Scripts\GunBob.cs" />
@@ -163,6 +164,7 @@
      <Compile Include="Assets\Scripts\SoundManager.cs" />
      <Compile Include="Assets\Scripts\SoundManagerTest.cs" />
      <Compile Include="Assets\Scripts\SpitterBrain.cs" />
+     <Compile Include="Assets\Scripts\SpitterHandler.cs" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BlendOneOne.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\NoiseEffectShaderRGB.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\SeparableWeightedBlurDof34.shader" />
