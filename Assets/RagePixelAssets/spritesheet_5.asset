@@ -9,23 +9,31 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8e34ba3a905f8744d98003eb88ed60f3, type: 1}
-  m_Name: spritesheet_4
-  atlas: {fileID: 2100000, guid: e2ce92d81e152429e890a116b6f058bf, type: 2}
+  m_Name: spritesheet_5
+  atlas: {fileID: 2100000, guid: 30c1bc4f932fd4bd3a141ebb1a3932d6, type: 2}
   _rows:
   - pixelSizeX: 16
     pixelSizeY: 16
     newPixelSizeX: 16
     newPixelSizeY: 16
-    key: 931825270
+    key: -2083680277
     name: 
     fontCharacter: 
     fontYOffset: 0
     _animations: []
     _cells:
-    - key: 331514239
+    - key: -896618887
       uv:
         serializedVersion: 2
         x: 0
+        y: 0
+        width: .25
+        height: .25
+      delay: 200
+    - key: 2110477105
+      uv:
+        serializedVersion: 2
+        x: .265625
         y: 0
         width: .25
         height: .25
@@ -34,21 +42,13 @@ MonoBehaviour:
     pixelSizeY: 16
     newPixelSizeX: 16
     newPixelSizeY: 16
-    key: 9394548
-    name: Default
+    key: -477374268
+    name: 
     fontCharacter: 
     fontYOffset: 0
     _animations: []
     _cells:
-    - key: -1654836133
-      uv:
-        serializedVersion: 2
-        x: .265625
-        y: 0
-        width: .25
-        height: .25
-      delay: 200
-    - key: -264443224
+    - key: -1069223863
       uv:
         serializedVersion: 2
         x: .53125
@@ -56,43 +56,11 @@ MonoBehaviour:
         width: .25
         height: .25
       delay: 200
-    - key: -1806275024
+    - key: -350852754
       uv:
         serializedVersion: 2
         x: 0
         y: .265625
-        width: .25
-        height: .25
-      delay: 200
-    - key: -50963900
-      uv:
-        serializedVersion: 2
-        x: 0
-        y: .53125
-        width: .25
-        height: .25
-      delay: 200
-    - key: 1496155855
-      uv:
-        serializedVersion: 2
-        x: .265625
-        y: .265625
-        width: .25
-        height: .25
-      delay: 200
-    - key: -174074258
-      uv:
-        serializedVersion: 2
-        x: .53125
-        y: .265625
-        width: .25
-        height: .25
-      delay: 200
-    - key: 2004333587
-      uv:
-        serializedVersion: 2
-        x: .265625
-        y: .53125
         width: .25
         height: .25
       delay: 200
