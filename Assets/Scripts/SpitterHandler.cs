@@ -13,7 +13,10 @@ public class SpitterHandler : MonoBehaviour {
 	
 	}
 
-  void OnCollisionEnter() {
-    gameObject.SetActiveRecursively(false);
+  void OnCollisionEnter(Collision other) {
+    Bullet bullet = other.gameObject.GetComponent<Bullet>() as Bullet;
+    if(bullet != null) {
+      gameObject.SetActiveRecursively(false);
+    }
   }
 }

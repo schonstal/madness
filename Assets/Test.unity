@@ -156,7 +156,7 @@ Transform:
   m_PrefabInternal: {fileID: 1520980092}
   m_GameObject: {fileID: 179389690}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.462713242, y: -38.3170128, z: 4.61753273}
+  m_LocalPosition: {x: -.462713242, y: -43.8854866, z: 4.61753273}
   m_LocalScale: {x: .075000003, y: .075000003, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -369,8 +369,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 3
   m_audioClip: {fileID: 8300000, guid: bd780d341cd6544ccaa20d1be64f00a7, type: 1}
-  m_PlayOnAwake: 1
-  m_Volume: 1
+  m_PlayOnAwake: 0
+  m_Volume: .228
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -764,6 +764,9 @@ GameObject:
   - 92: {fileID: 812375624}
   - 124: {fileID: 812375625}
   - 81: {fileID: 812375623}
+  - 114: {fileID: 812375626}
+  - 114: {fileID: 812375627}
+  - 169: {fileID: 812375628}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -837,6 +840,66 @@ Behaviour:
   m_PrefabInternal: {fileID: 1971362110}
   m_GameObject: {fileID: 812375620}
   m_Enabled: 1
+--- !u!114 &812375626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 812375620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0da8daaf1d21e474bafa968f8f6c9f1e, type: 1}
+  m_Name: 
+  strength: 0
+  blackIntensity: 1
+  whiteIntensity: 1
+  redChannelNoise: .975000024
+  greenChannelNoise: .875
+  blueChannelNoise: 1.20000005
+  redChannelTiling: 24
+  greenChannelTiling: 28
+  blueChannelTiling: 34
+  filterMode: 1
+  noiseShader: {fileID: 4800000, guid: b0249d8c935344451aa4de6db76f0688, type: 1}
+  noiseTexture: {fileID: 2800000, guid: 7a632f967e8ad42f5bd275898151ab6a, type: 1}
+--- !u!114 &812375627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 812375620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bef3d242a13c447ac90c2d2dc213b1ea, type: 1}
+  m_Name: 
+  intensity: 0
+  chromaticAberration: .200000003
+  blur: .100000001
+  blurSpread: 1.5
+  vignetteShader: {fileID: 4800000, guid: 627943dc7a9a74286b70a4f694a0acd5, type: 1}
+  separableBlurShader: {fileID: 4800000, guid: e97c14fbb5ea04c3a902cc533d7fc5d1, type: 1}
+  chromAberrationShader: {fileID: 4800000, guid: 2b4f29398d9484ccfa9fd220449f5eee,
+    type: 1}
+--- !u!169 &812375628
+AudioLowPassFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 812375620}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_CutoffFrequency: 22000
+  m_LowpassResonanceQ: 1
+  lowpassLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1081482499
 GameObject:
   m_ObjectHideFlags: 0
@@ -950,7 +1013,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: c5c1bcf77958a46b098d0c2ac8c07a37, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -38.3170128
+      value: -43.8854866
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: c5c1bcf77958a46b098d0c2ac8c07a37, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1523,6 +1586,14 @@ Prefab:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 666607520}
+    - target: {fileID: 8200004, guid: 513e8acdc90764715b37d488237b414d, type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8200004, guid: 513e8acdc90764715b37d488237b414d, type: 2}
+      propertyPath: m_Volume
+      value: .228
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 513e8acdc90764715b37d488237b414d, type: 2}
   m_RootGameObject: {fileID: 2074802821}
@@ -1582,6 +1653,7 @@ GameObject:
   - 114: {fileID: 2074802826}
   - 114: {fileID: 2074802827}
   - 114: {fileID: 2074802828}
+  - 114: {fileID: 2074802829}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1689,6 +1761,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a7a927382e4a4f64ad94ba69cbd73db, type: 1}
   m_Name: 
   soundTarget: {fileID: 1710363655}
+--- !u!114 &2074802829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2074802821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 008defb14e0a54f6f97efe231e942e98, type: 1}
+  m_Name: 
+  effectDuration: 1
+  noiseIntensity: 5
+  vignetteIntensity: 6
+  lowpassMinimumFrequency: 500
+  lowpassMaximumFrequency: 6000
 --- !u!1 &2124679268
 GameObject:
   m_ObjectHideFlags: 0
