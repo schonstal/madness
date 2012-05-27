@@ -14,9 +14,9 @@ Scene:
 --- !u!104 &2
 RenderSettings:
   m_Fog: 1
-  m_FogColor: {r: .188541681, g: .134495437, b: .26119405, a: 1}
+  m_FogColor: {r: .105804086, g: .0962352529, b: .201492548, a: 1}
   m_FogMode: 3
-  m_FogDensity: .0199999996
+  m_FogDensity: .0900000036
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
   m_AmbientLight: {r: .200000003, g: .200000003, b: .200000003, a: 1}
@@ -299,8 +299,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 3
   m_audioClip: {fileID: 8300000, guid: bd780d341cd6544ccaa20d1be64f00a7, type: 1}
-  m_PlayOnAwake: 1
-  m_Volume: 0
+  m_PlayOnAwake: 0
+  m_Volume: .296999991
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -661,7 +661,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: .102329388, g: .0781354308, b: .171641767, a: .0196078438}
+  m_BackGroundColor: {r: .105882354, g: .0980392173, b: .200000003, a: .0196078438}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -1047,6 +1047,26 @@ Prefab:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 666607520}
+    - target: {fileID: 8200004, guid: 513e8acdc90764715b37d488237b414d, type: 2}
+      propertyPath: m_Volume
+      value: .296999991
+      objectReference: {fileID: 0}
+    - target: {fileID: 8200004, guid: 513e8acdc90764715b37d488237b414d, type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2000000, guid: 513e8acdc90764715b37d488237b414d, type: 2}
+      propertyPath: m_BackGroundColor.r
+      value: .105882354
+      objectReference: {fileID: 0}
+    - target: {fileID: 2000000, guid: 513e8acdc90764715b37d488237b414d, type: 2}
+      propertyPath: m_BackGroundColor.g
+      value: .0980392173
+      objectReference: {fileID: 0}
+    - target: {fileID: 2000000, guid: 513e8acdc90764715b37d488237b414d, type: 2}
+      propertyPath: m_BackGroundColor.b
+      value: .200000003
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 513e8acdc90764715b37d488237b414d, type: 2}
   m_RootGameObject: {fileID: 2074802821}
