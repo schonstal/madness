@@ -16,7 +16,7 @@ RenderSettings:
   m_Fog: 1
   m_FogColor: {r: .105804086, g: .0962352529, b: .201492548, a: 1}
   m_FogMode: 3
-  m_FogDensity: .0900000036
+  m_FogDensity: .0799999982
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
   m_AmbientLight: {r: .200000003, g: .200000003, b: .200000003, a: 1}
@@ -87,7 +87,7 @@ GameObject:
   - 114: {fileID: 179389693}
   m_Layer: 9
   m_Name: Spitter
-  m_TagString: Untagged
+  m_TagString: HurtsPlayer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -104,6 +104,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 181365102}
+  - {fileID: 1629962397}
   m_Father: {fileID: 0}
 --- !u!136 &179389692
 CapsuleCollider:
@@ -261,6 +262,73 @@ MonoBehaviour:
   flipVertical: 0
   nextAnimFrame: 0
   playAnimation: 0
+--- !u!1 &362182315
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 3
+  m_Component:
+  - 4: {fileID: 362182316}
+  - 33: {fileID: 362182318}
+  - 135: {fileID: 362182319}
+  - 23: {fileID: 362182317}
+  m_Layer: 11
+  m_Name: Sphere
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &362182316
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 362182315}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 1270088522}
+--- !u!23 &362182317
+Renderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 362182315}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10302, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+--- !u!33 &362182318
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 362182315}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!135 &362182319
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 362182315}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1
+  m_Center: {x: 5.96046448e-08, y: 0, z: -8.94069672e-08}
 --- !u!1 &447328849
 GameObject:
   m_ObjectHideFlags: 0
@@ -270,7 +338,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 447328850}
   - 82: {fileID: 447328851}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Leads
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -356,7 +424,7 @@ GameObject:
   - 4: {fileID: 508547463}
   - 82: {fileID: 508547464}
   - 114: {fileID: 508547465}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Run
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -630,7 +698,7 @@ GameObject:
   - 114: {fileID: 812375626}
   - 114: {fileID: 812375627}
   - 169: {fileID: 812375628}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -777,7 +845,7 @@ GameObject:
   - 4: {fileID: 1081482500}
   - 82: {fileID: 1081482501}
   - 114: {fileID: 1081482502}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Shooting
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -937,6 +1005,63 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1270088521
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 3
+  m_Component:
+  - 4: {fileID: 1270088522}
+  - 54: {fileID: 1270088523}
+  - 135: {fileID: 1270088524}
+  m_Layer: 11
+  m_Name: SpitBall
+  m_TagString: HurtsPlayer
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1270088522
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1270088521}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 362182316}
+  m_Father: {fileID: 0}
+--- !u!54 &1270088523
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1270088521}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 116
+  m_CollisionDetection: 0
+--- !u!135 &1270088524
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1270088521}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1358282270
 GameObject:
   m_ObjectHideFlags: 0
@@ -948,7 +1073,7 @@ GameObject:
   - 33: {fileID: 1358282273}
   - 64: {fileID: 1358282274}
   - 23: {fileID: 1358282272}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1067,6 +1192,54 @@ Prefab:
       propertyPath: m_BackGroundColor.b
       value: .200000003
       objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 513e8acdc90764715b37d488237b414d, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 513e8acdc90764715b37d488237b414d, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 513e8acdc90764715b37d488237b414d, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: 513e8acdc90764715b37d488237b414d, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100022, guid: 513e8acdc90764715b37d488237b414d, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100018, guid: 513e8acdc90764715b37d488237b414d, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 513e8acdc90764715b37d488237b414d, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100016, guid: 513e8acdc90764715b37d488237b414d, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100020, guid: 513e8acdc90764715b37d488237b414d, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: 513e8acdc90764715b37d488237b414d, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100012, guid: 513e8acdc90764715b37d488237b414d, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100014, guid: 513e8acdc90764715b37d488237b414d, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 513e8acdc90764715b37d488237b414d, type: 2}
   m_RootGameObject: {fileID: 2074802821}
@@ -1139,6 +1312,10 @@ Prefab:
       propertyPath: soundTarget
       value: 
       objectReference: {fileID: 1710363655}
+    - target: {fileID: 100002, guid: c5c1bcf77958a46b098d0c2ac8c07a37, type: 2}
+      propertyPath: m_TagString
+      value: HurtsPlayer
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 11400002, guid: c5c1bcf77958a46b098d0c2ac8c07a37, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: c5c1bcf77958a46b098d0c2ac8c07a37, type: 2}
@@ -1260,7 +1437,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1627208960}
   - 114: {fileID: 1627208961}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BulletSpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1296,6 +1473,59 @@ MonoBehaviour:
   bulletSpeed: 80
   soundThreshold: .200000003
   soundVolume: .25
+--- !u!1 &1629962396
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 3
+  m_Component:
+  - 4: {fileID: 1629962397}
+  - 114: {fileID: 1629962398}
+  - 114: {fileID: 1629962399}
+  m_Layer: 0
+  m_Name: SpitBallShooter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1629962397
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1629962396}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: -1.62920685e-07}
+  m_LocalPosition: {x: .0179584809, y: -4.2326355, z: -.419073582}
+  m_LocalScale: {x: 13.333333, y: 13.333333, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_Children: []
+  m_Father: {fileID: 179389691}
+--- !u!114 &1629962398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1629962396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b64d902d7b38a4b9c89ddcfdd1e6b135, type: 1}
+  m_Name: 
+  speed: 20
+  minimumFireTime: 2
+  maximumFireTime: 5
+--- !u!114 &1629962399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1629962396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f4342f7ff67342b38b97131167c9b3d, type: 1}
+  m_Name: 
+  target: {fileID: 2074802822}
 --- !u!1 &1648460797
 GameObject:
   m_ObjectHideFlags: 0
@@ -1306,7 +1536,7 @@ GameObject:
   - 4: {fileID: 1648460798}
   - 82: {fileID: 1648460799}
   - 114: {fileID: 1648460800}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Still
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1405,7 +1635,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1695303454}
   - 114: {fileID: 1695303455}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GunContainer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1452,7 +1682,7 @@ GameObject:
   - 4: {fileID: 1710363656}
   - 82: {fileID: 1710363657}
   - 114: {fileID: 1710363658}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Run Kick
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1620,8 +1850,9 @@ GameObject:
   serializedVersion: 3
   m_Component:
   - 4: {fileID: 1869169594}
+  - 114: {fileID: 1869169595}
   m_Layer: 0
-  m_Name: SpitterBulletHandler
+  m_Name: SpitBallHandler
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1639,6 +1870,17 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &1869169595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1869169593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5600969d37d564aa49ee00ed2492792d, type: 1}
+  m_Name: 
+  prefab: {fileID: 1270088521}
 --- !u!1 &1917766975
 GameObject:
   m_ObjectHideFlags: 0
@@ -1647,7 +1889,7 @@ GameObject:
   serializedVersion: 3
   m_Component:
   - 4: {fileID: 1917766976}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sounds
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1710,7 +1952,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ddb34eb963f14c429fdd8525d60d544, type: 1}
   m_Name: 
   prefab: {fileID: 179389690}
-  numEnemies: 100
+  numEnemies: 10
 --- !u!1 &2074802821
 GameObject:
   m_ObjectHideFlags: 0
@@ -1726,7 +1968,7 @@ GameObject:
   - 114: {fileID: 2074802827}
   - 114: {fileID: 2074802828}
   - 114: {fileID: 2074802829}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1866,7 +2108,7 @@ GameObject:
   - 33: {fileID: 2124679271}
   - 114: {fileID: 2124679274}
   - 114: {fileID: 2124679273}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: New Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}

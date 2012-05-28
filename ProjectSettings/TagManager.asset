@@ -3,6 +3,7 @@
 --- !u!78 &1
 TagManager:
   tags:
+  - HurtsPlayer
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
@@ -14,8 +15,8 @@ TagManager:
   Builtin Layer 7: 
   User Layer 8: Bullets
   User Layer 9: Interactive
-  User Layer 10: 
-  User Layer 11: 
+  User Layer 10: Player
+  User Layer 11: EnemyBullets
   User Layer 12: 
   User Layer 13: 
   User Layer 14: 

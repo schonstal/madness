@@ -38,8 +38,7 @@ public class CharacterDamage : MonoBehaviour {
 	}
 
   void OnCollisionEnter(Collision other) {
-    SpitterHandler enemy = other.gameObject.GetComponent<SpitterHandler>() as SpitterHandler;
-    if (enemy != null) {
+    if (other.gameObject.tag == "HurtsPlayer") {
       noise = Camera.main.GetComponent<NoiseAndGrain>() as NoiseAndGrain;
       vignetting = Camera.main.GetComponent<Vignetting>() as Vignetting;
       lowPass = Camera.main.GetComponent<AudioLowPassFilter>() as AudioLowPassFilter;
