@@ -172,8 +172,8 @@ MonoBehaviour:
   ZLayer: 0
   pixelSizeX: 32
   pixelSizeY: 32
-  meshIsDirty: 1
-  vertexColorsAreDirty: 1
+  meshIsDirty: 0
+  vertexColorsAreDirty: 0
   tintColor: {r: 1, g: 1, b: 1, a: 1}
   flipHorizontal: 0
   flipVertical: 0

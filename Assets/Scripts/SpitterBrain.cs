@@ -23,6 +23,7 @@ public class SpitterBrain : MonoBehaviour {
 	void Update () {
     soundTimer += Time.deltaTime;
     if(soundManager.OutputVolume > soundThreshold && !inPeak && soundTimer >= minimumTime) {
+      Debug.Log(soundTimer);
       soundTimer = 0;
       inPeak = true;
       flyCycle = !flyCycle;

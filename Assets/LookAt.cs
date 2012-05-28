@@ -4,6 +4,8 @@ using System.Collections;
 public class LookAt : MonoBehaviour {
   public Transform target;
 
+  SpitBallHandler ballHandler;
+
 	// Use this for initialization
 	void Start () {
 	
