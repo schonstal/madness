@@ -3,7 +3,7 @@ using System.Collections;
 
 public class GunBob : MonoBehaviour {
   public Vector2 magnitude = new Vector2(.003f, .001f);
-  public float cameraBobMagnitude = 0.001f;
+  public Vector2 cameraBobMagnitude = new Vector2(0.003f, 0.001f);
   public float bobsPerSecond = 2f;
   public GameObject target;
   public float minRunSpeed = 1000f;
@@ -26,8 +26,8 @@ public class GunBob : MonoBehaviour {
         (target.rigidbody.velocity.magnitude/playerMovement.maxForward);
 
     transform.parent.localPosition = new Vector3(
-        cameraOriginalPosition.x,
-        cameraOriginalPosition.y - cameraBobMagnitude * Mathf.Sin(bobTimer*2),
+        cameraOriginalPosition.x + cameraBobMagnitude.x * Mathf.Cos(bobTimer),
+        cameraOriginalPosition.y + cameraBobMagnitude.y * Mathf.Sin(bobTimer*2),
         cameraOriginalPosition.z);
 
     transform.localPosition = new Vector3(
