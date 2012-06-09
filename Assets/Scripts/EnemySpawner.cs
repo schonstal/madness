@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 public class EnemySpawner : MonoBehaviour {
   public GameObject prefab;
-  public int numEnemies = 1000;
+  public int numEnemies = 100;
   Stack<GameObject> inactiveEnemies;
 
 	// Use this for initialization
@@ -16,7 +16,7 @@ public class EnemySpawner : MonoBehaviour {
       if (inactiveEnemies.Count > 0) {
         enemy = inactiveEnemies.Pop();
       } else {
-        enemy = Instantiate(prefab, new Vector3(Random.Range(-20,20), -38.3f, Random.Range(-20,20)), transform.rotation) as GameObject;
+        enemy = Instantiate(prefab, new Vector3(Random.Range(-50,50), -38.3f, Random.Range(-50,50)), transform.rotation) as GameObject;
       }  
     }
 	}
