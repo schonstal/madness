@@ -370,12 +370,17 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400012, guid: 513e8acdc90764715b37d488237b414d, type: 2}
       propertyPath: cameraBobMagnitude.x
-      value: .0700000003
+      value: -.0700000003
       objectReference: {fileID: 0}
     - target: {fileID: 11400012, guid: 513e8acdc90764715b37d488237b414d, type: 2}
       propertyPath: cameraBobMagnitude.y
       value: .150000006
       objectReference: {fileID: 0}
+    - target: {fileID: 13600000, guid: 513e8acdc90764715b37d488237b414d, type: 2}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 5410a64fad11e8d6d00011d98d76c639,
+        type: 2}
     m_RemovedComponents:
     - {fileID: 11400020, guid: 513e8acdc90764715b37d488237b414d, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 513e8acdc90764715b37d488237b414d, type: 2}
@@ -950,7 +955,7 @@ BoxCollider:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 868865857}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 5410a64fad11e8d6d00011d98d76c639, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -1900,7 +1905,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e38a79cd27094f0784729446020b3c2, type: 1}
   m_Name: 
   magnitude: {x: .0199999996, y: .00400000019}
-  cameraBobMagnitude: {x: .0700000003, y: .150000006}
+  cameraBobMagnitude: {x: -.0700000003, y: .150000006}
   bobsPerSecond: 1.33333337
   target: {fileID: 2074802821}
   minRunSpeed: 10
@@ -2258,7 +2263,7 @@ CapsuleCollider:
     type: 2}
   m_PrefabInternal: {fileID: 230277650}
   m_GameObject: {fileID: 2074802821}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 5410a64fad11e8d6d00011d98d76c639, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: .500000119
