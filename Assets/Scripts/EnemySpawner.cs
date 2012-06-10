@@ -7,22 +7,15 @@ public class EnemySpawner : MonoBehaviour {
   public int numEnemies = 100;
   Stack<GameObject> inactiveEnemies;
 
-	// Use this for initialization
-	void Start () {
+	void Start() {
     inactiveEnemies = new Stack<GameObject>();
 
     GameObject enemy;
-    for(int i = 0; i < numEnemies; i++) {
-      if (inactiveEnemies.Count > 0) {
-        enemy = inactiveEnemies.Pop();
-      } else {
-        enemy = Instantiate(prefab, new Vector3(Random.Range(-50,50), -38.3f, Random.Range(-50,50)), transform.rotation) as GameObject;
-      }  
-    }
+    enemy = Instantiate(prefab, transform.position, transform.rotation) as GameObject;
 	}
 	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+
+  void OnDrawGizmos() {
+    Gizmos.DrawIcon(transform.position + new Vector3(0f,2.5f,0f), "EditorIcons/Enemy.png", false);
+  }
 }
