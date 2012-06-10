@@ -5,7 +5,7 @@ public class SecretDoor : MonoBehaviour {
   public float probability = 0.2f;
 
   void OnDrawGizmos() {
-    Gizmos.DrawIcon(transform.position + new Vector3(0f,2.5f,0f), "EditorIcons/Secret.png", true);
+    Gizmos.DrawIcon(transform.position + new Vector3(0f,2.5f,0f), "EditorIcons/Secret.png", false);
   }
 
 	void Start () {
