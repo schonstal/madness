@@ -28,7 +28,7 @@ public class SpriteManager : MonoBehaviour {
     float column = Mathf.Floor(frame%rows);
 
     renderer.material.mainTextureOffset = new Vector2(
-        row/rows, (columns - column)/columns);
+        row/rows, 0.5f);//(columns - column)/columns);
 
   }
 

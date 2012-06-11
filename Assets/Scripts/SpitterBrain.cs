@@ -2,7 +2,6 @@ using UnityEngine;
 using System.Collections;
 
 public class SpitterBrain : MonoBehaviour {
-  public GameObject soundTarget;
   public GameObject shooterTarget;
   public float soundThreshold = 0.6f;
   public float minimumTime = 0.39f;
@@ -21,7 +20,7 @@ public class SpitterBrain : MonoBehaviour {
   int currentIteration = 0;
 
 	void Start () {
-	  soundManager = soundTarget.GetComponent<SoundManager>() as SoundManager;
+    renderer.material.color = new Color(1,0,1);
     shooter = shooterTarget.GetComponent<SpitBallShooter>() as SpitBallShooter; 
 
     animationManager = GetComponent<AnimationManager>() as AnimationManager;
@@ -31,29 +30,21 @@ public class SpitterBrain : MonoBehaviour {
     animationManager.AddAnimation("FireDown", new int[] {7,8,9}, 9f);
     fireIterationMax += 1;
     iterations = Random.Range(fireIterationMin, fireIterationMax);
+
+    animationManager.Play("FireDown");
 	}
 	
 	void Update () {
-    soundTimer += Time.deltaTime;
-    if(soundManager.OutputVolume > soundThreshold && !inPeak && soundTimer >= minimumTime) {
-      soundTimer = 0;
-      inPeak = true;
-      flyCycle = !flyCycle;
-      if(flyCycle) {
-        animationManager.Play("FlyUp", true);
+    if(animationManager.Finished) {
+      if(currentIteration >= iterations) {
+        iterations = Random.Range(fireIterationMin, fireIterationMax);
+        currentIteration = 0;
+        animationManager.Play("FireDown", true);
+        shooter.Fire();
       } else {
-        if(currentIteration >= iterations) {
-          iterations = Random.Range(fireIterationMin, fireIterationMax);
-          currentIteration = 0;
-          animationManager.Play("FireDown", true);
-          shooter.Fire();
-        } else {
-          animationManager.Play("FlyDown", true);
-        }
-        currentIteration++;
+        animationManager.Play("FlyDown", true);
       }
-    } else {
-      inPeak = false;
+      currentIteration++;
     }
 	}
 }
