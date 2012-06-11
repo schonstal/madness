@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 public class SpriteManager : MonoBehaviour {
   public float rows = 2f;
-  public float columns = 2f;
+  public float columns = 1f;
 
   Dictionary<string, SpriteAnimation> animations = new Dictionary<string, SpriteAnimation>();
   string currentAnimation = null;

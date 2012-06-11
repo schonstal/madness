@@ -8875,13 +8875,13 @@ MonoBehaviour:
   grid9Top: 0
   grid9Right: 0
   grid9Bottom: 0
-  currentRowKey: -1037044480
-  currentCellKey: -391541361
+  currentRowKey: 816003896
+  currentCellKey: 1636796201
   ZLayer: 0
   pixelSizeX: 128
   pixelSizeY: 128
-  meshIsDirty: 1
-  vertexColorsAreDirty: 1
+  meshIsDirty: 0
+  vertexColorsAreDirty: 0
   tintColor: {r: 1, g: 1, b: 1, a: 1}
   flipHorizontal: 0
   flipVertical: 0
