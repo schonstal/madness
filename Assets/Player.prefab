@@ -32,6 +32,7 @@ GameObject:
   - 114: {fileID: 11400028}
   - 114: {fileID: 11400030}
   - 114: {fileID: 11400032}
+  - 114: {fileID: 11400020}
   m_Layer: 10
   m_Name: Player
   m_TagString: Untagged
@@ -319,6 +320,7 @@ Transform:
   m_Children:
   - {fileID: 400016}
   - {fileID: 400022}
+  - {fileID: 400024}
   - {fileID: 400010}
   m_Father: {fileID: 400002}
 --- !u!4 &400014
@@ -340,13 +342,12 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100016}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .0320000015, y: -.0420761108, z: .250922203}
+  m_LocalPosition: {x: 0, y: -.0420761108, z: 0}
   m_LocalScale: {x: .00333333341, y: .00499999989, z: .100000009}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 400014}
   - {fileID: 400018}
-  - {fileID: 400024}
   m_Father: {fileID: 400012}
 --- !u!4 &400018
 Transform:
@@ -355,7 +356,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100018}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.5101576, y: -16.3833618, z: 1.2484597}
+  m_LocalPosition: {x: 0, y: -16.3833618, z: 0}
   m_LocalScale: {x: 200, y: 200, z: 6.66666651}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -391,11 +392,11 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100024}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.60000038, y: 0, z: -2.50922179}
-  m_LocalScale: {x: 200, y: 200, z: 6.66666651}
+  m_LocalPosition: {x: 0, y: -.0420761108, z: 0}
+  m_LocalScale: {x: .666666687, y: 1, z: .666666687}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
-  m_Father: {fileID: 400016}
+  m_Father: {fileID: 400012}
 --- !u!20 &2000000
 Camera:
   m_ObjectHideFlags: 1
@@ -413,7 +414,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: .300000012
-  far clip plane: 1000
+  far clip plane: 70
   field of view: 60
   orthographic: 0
   orthographic size: 100
@@ -495,7 +496,7 @@ AudioListener:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100012}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!82 &8200000
 AudioSource:
   m_ObjectHideFlags: 1
@@ -792,9 +793,9 @@ Light:
   m_Enabled: 1
   serializedVersion: 3
   m_Type: 2
-  m_Color: {r: .432835817, g: .881014466, b: 1, a: 1}
-  m_Intensity: 1
-  m_Range: 10
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: .100000001
+  m_Range: 20
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
@@ -949,8 +950,8 @@ MonoBehaviour:
   ZLayer: 0
   pixelSizeX: 64
   pixelSizeY: 64
-  meshIsDirty: 0
-  vertexColorsAreDirty: 0
+  meshIsDirty: 1
+  vertexColorsAreDirty: 1
   tintColor: {r: 1, g: 1, b: 1, a: 1}
   flipHorizontal: 0
   flipVertical: 0
@@ -983,6 +984,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c98e9e70a86104da1a3ec55bc8300e19, type: 1}
   m_Name: 
   spriteName: Gun
+--- !u!114 &11400020
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b518e936382842a99ec955be2f8f05e, type: 1}
+  m_Name: 
 --- !u!114 &11400022
 MonoBehaviour:
   m_ObjectHideFlags: 1
