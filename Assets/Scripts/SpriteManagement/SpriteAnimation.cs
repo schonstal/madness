@@ -6,10 +6,10 @@ public class SpriteAnimation {
   public List<int> listFrames;
   public bool finished;
   public float FramesPerSecond = 30;
+  public int frameIndex = 0;
 
   IRagePixel ragePixel;
   float timer = 0f;
-  int frameIndex = 0;
   bool loops;
   float frameTime;
 
@@ -22,22 +22,26 @@ public class SpriteAnimation {
     get { return frames[frameIndex]; }
   }
 
+  public int FrameIndex {
+    get { return frameIndex; }
+  }
+
 	public SpriteAnimation(int[] frameArray, float framerate, bool loop = true) {
     frames = frameArray; 
     frameTime = 1/framerate;
     loops = loop;
 	}
 	
-	public void Play(float dt, bool forceRestart = false) {
+	public void Play(float dt, bool forceRestart = false, int startFrameIndex = 0) {
     if(forceRestart) {
       timer = 0f;
-      frameIndex = 0;
+      frameIndex = startFrameIndex;
       finished = false;
     }
     timer += dt;
     if(timer >= frameTime && !(!loops && finished)) {
       if(frameIndex + 1 > frames.Length - 1 || forceRestart) {
-        if(loops) frameIndex = 0;
+        if(loops) frameIndex = startFrameIndex;
         finished = true;
       } else {
         frameIndex++;

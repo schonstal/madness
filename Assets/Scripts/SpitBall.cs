@@ -26,4 +26,10 @@ public class SpitBall : MonoBehaviour {
   void OnCollisionEnter(Collision collision) {
     ballHandler.PushSpitBall(gameObject);
   }
+
+  public void Recycle() {
+    lifeTimer = 0;
+    active = true;
+    Debug.Log("yay");
+  }
 }

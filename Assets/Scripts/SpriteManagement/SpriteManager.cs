@@ -31,7 +31,7 @@ public class SpriteManager : MonoBehaviour {
         1 - (columns - column)/(float)columns, 
         row/(float)rows);
 
-    Debug.Log("Row: " + row + ", Column: " + column + ", Frame: " +frame);
+//    Debug.Log("Row: " + row + ", Column: " + column + ", Frame: " +frame);
 
   }
 

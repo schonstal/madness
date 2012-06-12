@@ -25,6 +25,7 @@ public class SpitBallHandler : MonoBehaviour {
     }  
 
     spitBall.SetActiveRecursively(true);
+    spitBall.BroadcastMessage("Recycle", SendMessageOptions.DontRequireReceiver);
     return spitBall;	
   }
 

@@ -8,6 +8,8 @@ public class Pistol : MonoBehaviour {
   public float flashRange = 40f;
   public float damage = 5f;
 
+  public LayerMask layerMask = -1;
+
   public Transform bulletSpawn;
 
   public GameObject prefab;
@@ -36,7 +38,7 @@ public class Pistol : MonoBehaviour {
 
       transform.localPosition += new Vector3(0, -0.01f, 0);
 
-      if(Physics.Raycast(bulletSpawn.position, bulletSpawn.forward, out hit, 300f)) {
+      if(Physics.Raycast(bulletSpawn.position, bulletSpawn.forward, out hit, 300f, layerMask.value)) {
         Debug.DrawLine(transform.position, hit.point, Color.magenta);
         hit.collider.BroadcastMessage("ApplyDamage", damage, SendMessageOptions.DontRequireReceiver);
       }
