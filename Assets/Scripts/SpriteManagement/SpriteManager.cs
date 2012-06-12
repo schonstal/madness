@@ -3,15 +3,15 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class SpriteManager : MonoBehaviour {
-  public float rows = 2f;
-  public float columns = 1f;
+  public int rows = 2;
+  public int columns = 2;
 
   Dictionary<string, SpriteAnimation> animations = new Dictionary<string, SpriteAnimation>();
   string currentAnimation = null;
   bool forceRestart = false;
 
 	void Start () {
-    renderer.material.mainTextureScale = new Vector2(1/rows, 1/columns);
+    renderer.material.mainTextureScale = new Vector2(1/(float)rows, 1/(float)columns);
 	}
 	
 	void Update () {
@@ -24,11 +24,14 @@ public class SpriteManager : MonoBehaviour {
 	}
 
   void selectFrame(int frame) {
-    float row = Mathf.Floor(frame/columns) - 1;
-    float column = Mathf.Floor(frame%rows);
+    int row = rows - frame/columns - 1;
+    int column = frame%columns;
 
     renderer.material.mainTextureOffset = new Vector2(
-        row/rows, 0.5f);//(columns - column)/columns);
+        (columns - column)/(float)columns, 
+        row/(float)rows);
+
+    Debug.Log("Row: " + row + ", Column: " + column + ", Frame: " +frame);
 
   }
 
