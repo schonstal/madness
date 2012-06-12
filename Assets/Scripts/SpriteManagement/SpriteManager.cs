@@ -16,10 +16,10 @@ public class SpriteManager : MonoBehaviour {
 	
 	void Update () {
     if (currentAnimation != null) {
-      animations[currentAnimation].Play(Time.deltaTime, forceRestart);
+      CurrentAnimation.Play(Time.deltaTime, forceRestart);
       if(forceRestart) forceRestart = false;
 
-      selectFrame(animations[currentAnimation].Frame);
+      selectFrame(CurrentAnimation.Frame);
     }
 	}
 
@@ -28,7 +28,7 @@ public class SpriteManager : MonoBehaviour {
     int column = frame%columns;
 
     renderer.material.mainTextureOffset = new Vector2(
-        (columns - column)/(float)columns, 
+        1 - (columns - column)/(float)columns, 
         row/(float)rows);
 
     Debug.Log("Row: " + row + ", Column: " + column + ", Frame: " +frame);
@@ -46,7 +46,13 @@ public class SpriteManager : MonoBehaviour {
 
   public bool Finished {
     get {
-      return animations[currentAnimation].finished;
+      return CurrentAnimation.finished;
+    }
+  }
+
+  public SpriteAnimation CurrentAnimation {
+    get {
+      return animations[currentAnimation];
     }
   }
 }

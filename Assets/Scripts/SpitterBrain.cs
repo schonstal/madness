@@ -3,22 +3,25 @@ using System.Collections;
 
 public class SpitterBrain : MonoBehaviour {
   public GameObject shooterTarget;
-  public float soundThreshold = 0.6f;
-  public float minimumTime = 0.39f;
 
   public float cringeTime = 0.2f;
-  public float health = 15;
+  public float hitPoints = 15;
 
   public int fireIterationMin = 1;
   public int fireIterationMax = 3;
 
+  public float fallAmount = 1.2f;
+  public float fallTime = 0.25f;
+
   SpitBallShooter shooter;
-  AnimationManager animationManager;
+  SpriteManager animationManager;
+
+  Vector3 fallPosition;
+  Vector3 oldPosition;
 
   bool hurt = false;
-
-  int iterations = 1;
-  int currentIteration = 0;
+  bool wasHurt = false;
+  bool dead = false;
 
   float hurtTimer = 0;
 
@@ -26,45 +29,53 @@ public class SpitterBrain : MonoBehaviour {
     renderer.material.color = new Color(1,0,1);
     shooter = shooterTarget.GetComponent<SpitBallShooter>() as SpitBallShooter; 
 
-    animationManager = GetComponent<AnimationManager>() as AnimationManager;
-    animationManager.AddAnimation("FlyDown", new int[] {1,2,3}, 9f);
-    animationManager.AddAnimation("FlyUp", new int[] {4,5,0}, 9f);
+    animationManager = GetComponent<SpriteManager>() as SpriteManager;
 
-    animationManager.AddAnimation("FireDown", new int[] {7,8,9}, 9f);
+    animationManager.AddAnimation("Fly", new int[] {0,1,2,3,4,5}, 9f);
+    animationManager.AddAnimation("Fire", new int[] {7,8,9,10,11,12}, 9f);
     fireIterationMax += 1;
-    iterations = Random.Range(fireIterationMin, fireIterationMax);
 
-    animationManager.AddAnimation("Hurt", new int[] {12}, 9f);
+    animationManager.AddAnimation("Die", new int[] {13,6}, 15f, false);
+    animationManager.AddAnimation("Hurt", new int[] {13}, 9f);
 
-    animationManager.Play("FlyDown");
+    animationManager.Play("Fly");
 	}
 	
 	void Update () {
-    if(hurt) {
+    animationManager = GetComponent<SpriteManager>() as SpriteManager;
+    if(hitPoints <= 0) {
+      animationManager.Play("Die");
+      hurtTimer += Time.deltaTime/fallTime;
+      transform.position = Vector3.Lerp(oldPosition, fallPosition, hurtTimer);
+    } else if(hurt) {
       hurtTimer += Time.deltaTime;
-      if(hurtTimer >= cringeTime && health > 0) {
+      if(hurtTimer >= cringeTime && hitPoints > 0) {
         hurt = false;
         hurtTimer = 0;
       }
       animationManager.Play("Hurt");
-    } else if(animationManager.Finished) {
-      if(currentIteration >= iterations) {
-        iterations = Random.Range(fireIterationMin, fireIterationMax);
-        currentIteration = 0;
-        animationManager.Play("FireDown", true);
+      wasHurt = true;
+    } else {
 //        shooter.Fire();
-      } else {
-        animationManager.Play("FlyDown", true);
-      }
-      currentIteration++;
+      animationManager.Play("Fly",(wasHurt ? true : false));
+      wasHurt = false;
     }
 
 	}
 
   public void ApplyDamage(float damage) {
-    Debug.Log(health);
-    hurtTimer = 0;
-    health -= damage;
-    hurt = true;
+    if(!dead) {
+      Debug.Log(hitPoints);
+      hurtTimer = 0;
+      hitPoints -= damage;
+      hurt = true;
+
+      if(hitPoints <= 0) {
+        fallPosition = transform.position - new Vector3(0,fallAmount,0);
+        oldPosition = transform.position;
+        dead = true;
+        collider.isTrigger = true;
+      }
+    }
   }
 }

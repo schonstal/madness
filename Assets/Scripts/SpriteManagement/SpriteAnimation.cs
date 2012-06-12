@@ -36,10 +36,11 @@ public class SpriteAnimation {
     }
     timer += dt;
     if(timer >= frameTime && !(!loops && finished)) {
-      frameIndex++;
-      if(frameIndex > frames.Length - 1 || forceRestart) {
-        frameIndex = 0;
+      if(frameIndex + 1 > frames.Length - 1 || forceRestart) {
+        if(loops) frameIndex = 0;
         finished = true;
+      } else {
+        frameIndex++;
       }
       timer = 0;
     }

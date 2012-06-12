@@ -21,7 +21,8 @@ public class Pistol : MonoBehaviour {
 
 	void Start() {
     spriteManager = GetComponent<SpriteManager>() as SpriteManager;
-    spriteManager.AddAnimation("Fire", new int[] {0,1,2,3}, 1f, false);
+    spriteManager.AddAnimation("Fire", new int[] {1,0}, 30f, false);
+    spriteManager.AddAnimation("Rest", new int[] {0}, 30f, true);
 
     originalIntensity = light.intensity;
 	}
@@ -42,6 +43,7 @@ public class Pistol : MonoBehaviour {
     } else {
       light.intensity = originalIntensity;
       light.range = originalRange;
+      spriteManager.Play("Rest");
     }
 	}
 }
