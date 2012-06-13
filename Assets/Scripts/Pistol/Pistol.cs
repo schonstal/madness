@@ -6,7 +6,8 @@ public class Pistol : MonoBehaviour {
   public Light light;
   public float flashIntensity = 0.25f;
   public float flashRange = 40f;
-  public float damage = 5f;
+
+  public GunMessage damage;
 
   public LayerMask layerMask = -1;
 
