@@ -79,12 +79,13 @@ public class SpitterBrain : MonoBehaviour {
 
 	}
 
-  public void ApplyDamage(float damage) {
+  public void ApplyDamage(GunMessage message) {
     if(!dead) {
       Debug.Log(hitPoints);
       hurtTimer = 0;
-      hitPoints -= damage;
+      hitPoints -= message.damage;
       hurt = true;
+      transform.parent.position += transform.parent.forward * message.knockBack;
 
       if(hitPoints <= 0) {
         fallPosition = transform.position - new Vector3(0,fallAmount,0);
