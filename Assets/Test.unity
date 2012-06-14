@@ -29716,7 +29716,7 @@ MonoBehaviour:
   grid9Right: 0
   grid9Bottom: 0
   currentRowKey: 1938360652
-  currentCellKey: -27815593
+  currentCellKey: -621257968
   ZLayer: 0
   pixelSizeX: 16
   pixelSizeY: 16
@@ -31811,7 +31811,7 @@ MonoBehaviour:
   grid9Right: 0
   grid9Bottom: 0
   currentRowKey: 1938360652
-  currentCellKey: -27815593
+  currentCellKey: -621257968
   ZLayer: 0
   pixelSizeX: 16
   pixelSizeY: 16
@@ -34824,9 +34824,9 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6e38a79cd27094f0784729446020b3c2, type: 1}
   m_Name: 
-  magnitude: {x: .0199999996, y: .00999999978}
-  cameraBobMagnitude: {x: -.0700000003, y: .200000003}
-  bobsPerSecond: .899999976
+  magnitude: {x: .0299999993, y: .00800000038}
+  cameraBobMagnitude: {x: .0799999982, y: -.200000003}
+  bobsPerSecond: 1
   target: {fileID: 2074802821}
   minRunSpeed: 10
   returnToNeutralTime: .5
@@ -37702,23 +37702,23 @@ Prefab:
       objectReference: {fileID: 666607520}
     - target: {fileID: 11400036, guid: 513e8acdc90764715b37d488237b414d, type: 2}
       propertyPath: bobsPerSecond
-      value: .899999976
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400036, guid: 513e8acdc90764715b37d488237b414d, type: 2}
       propertyPath: cameraBobMagnitude.x
-      value: -.0700000003
+      value: .0799999982
       objectReference: {fileID: 0}
     - target: {fileID: 11400036, guid: 513e8acdc90764715b37d488237b414d, type: 2}
       propertyPath: magnitude.x
-      value: .0199999996
+      value: .0299999993
       objectReference: {fileID: 0}
     - target: {fileID: 11400022, guid: 513e8acdc90764715b37d488237b414d, type: 2}
       propertyPath: maxForward
-      value: 17
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 11400036, guid: 513e8acdc90764715b37d488237b414d, type: 2}
       propertyPath: cameraBobMagnitude.y
-      value: .200000003
+      value: -.200000003
       objectReference: {fileID: 0}
     - target: {fileID: 11400006, guid: 513e8acdc90764715b37d488237b414d, type: 2}
       propertyPath: prefab
@@ -37806,11 +37806,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400036, guid: 513e8acdc90764715b37d488237b414d, type: 2}
       propertyPath: magnitude.y
-      value: .00999999978
+      value: .00800000038
       objectReference: {fileID: 0}
     - target: {fileID: 11400022, guid: 513e8acdc90764715b37d488237b414d, type: 2}
       propertyPath: speed
-      value: 200
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 10800000, guid: 513e8acdc90764715b37d488237b414d, type: 2}
       propertyPath: m_Color.g
@@ -39103,8 +39103,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d4aea6e1e6d244638450b3d38f24a02, type: 1}
   m_Name: 
   velocity: {x: 0, y: 0}
-  speed: 200
-  maxForward: 17
+  speed: 150
+  maxForward: 18
 --- !u!136 &2074802825
 CapsuleCollider:
   m_ObjectHideFlags: 0

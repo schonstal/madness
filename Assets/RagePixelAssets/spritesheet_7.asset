@@ -22,20 +22,20 @@ MonoBehaviour:
     fontYOffset: 0
     _animations: []
     _cells:
-    - key: -27815593
+    - key: -621257968
       uv:
         serializedVersion: 2
         x: 0
         y: 0
         width: .5
         height: .25
-      delay: 200
-    - key: 1608486659
+      delay: 500
+    - key: -1486422011
       uv:
         serializedVersion: 2
         x: 0
         y: .265625
         width: .5
         height: .25
-      delay: 200
+      delay: 500
   thumbnailSize: 40

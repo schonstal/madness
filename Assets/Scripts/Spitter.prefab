@@ -90,7 +90,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 1, z: 0, w: -1.62920685e-07}
   m_LocalPosition: {x: .0179584809, y: -4.2326355, z: 0}
   m_LocalScale: {x: 13.333333, y: 13.333333, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180.000015, z: 0}
   m_Children: []
   m_Father: {fileID: 400002}
 --- !u!23 &2300000
@@ -150,12 +150,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7986d3ec8e1e448eca222cd167d0d7a4, type: 1}
   m_Name: 
   shooterTarget: {fileID: 100004}
-  soundThreshold: .600000024
-  minimumTime: .300000012
   cringeTime: 1.5
-  health: 15
+  hitPoints: 15
+  minFireTime: .200000003
+  maxFireTime: .400000006
+  fireTime: 0
   fireIterationMin: 1
   fireIterationMax: 1
+  fallAmount: 1.20000005
+  fallTime: .25
 --- !u!114 &11400006
 MonoBehaviour:
   m_ObjectHideFlags: 1

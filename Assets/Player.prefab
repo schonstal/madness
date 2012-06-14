@@ -188,10 +188,10 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
-  m_LocalRotation: {x: -1.15202326e-07, y: .707106709, z: -.707106829, w: -1.15202312e-07}
+  m_LocalRotation: {x: -1.15202333e-07, y: .707106769, z: -.707106888, w: -1.15202319e-07}
   m_LocalPosition: {x: -1.89193279e-16, y: -.120030001, z: .25}
   m_LocalScale: {x: .0149999997, y: 1, z: .0199999996}
-  m_LocalEulerAnglesHint: {x: 90, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: 180.000015, z: 0}
   m_Children: []
   m_Father: {fileID: 400012}
 --- !u!4 &400002
@@ -293,7 +293,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100022}
-  m_LocalRotation: {x: -1.15202326e-07, y: -.707106709, z: .707106829, w: -1.15202312e-07}
+  m_LocalRotation: {x: -1.15202333e-07, y: -.707106769, z: .707106888, w: -1.15202319e-07}
   m_LocalPosition: {x: 0, y: -.0299987793, z: .219999999}
   m_LocalScale: {x: .100000001, y: 1, z: .100000001}
   m_LocalEulerAnglesHint: {x: 90, y: -180, z: 0}
@@ -638,6 +638,14 @@ MonoBehaviour:
   light: {fileID: 10800000}
   flashIntensity: .200000003
   flashRange: 50
+  damage:
+    damage: 0
+    knockBack: 0
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  bulletSpawn: {fileID: 0}
+  prefab: {fileID: 0}
 --- !u!114 &11400008
 MonoBehaviour:
   m_ObjectHideFlags: 1
