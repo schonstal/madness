@@ -24,8 +24,8 @@ public class Pistol : MonoBehaviour {
 
 	void Start() {
     spriteManager = GetComponent<SpriteManager>() as SpriteManager;
-    spriteManager.AddAnimation("Fire", new int[] {1,0}, 30f, false);
-    spriteManager.AddAnimation("Rest", new int[] {0}, 30f, true);
+    spriteManager.AddAnimation("Fire", new int[] {1,2,3,4,0}, 15f, false);
+    spriteManager.AddAnimation("Rest", new int[] {0}, 15f, true);
 
     originalIntensity = light.intensity;
 	}
@@ -37,7 +37,7 @@ public class Pistol : MonoBehaviour {
       light.intensity = flashIntensity;
       light.range = flashRange;
 
-      transform.localPosition += new Vector3(0, -0.01f, 0);
+      //transform.localPosition += new Vector3(0, -0.01f, 0);
 
       if(Physics.Raycast(bulletSpawn.position, bulletSpawn.forward, out hit, 300f, layerMask.value)) {
         Debug.DrawLine(transform.position, hit.point, Color.magenta);
@@ -46,7 +46,7 @@ public class Pistol : MonoBehaviour {
     } else {
       light.intensity = originalIntensity;
       light.range = originalRange;
-      spriteManager.Play("Rest");
+      //spriteManager.Play("Rest");
     }
 	}
 }
