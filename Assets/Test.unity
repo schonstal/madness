@@ -16,10 +16,10 @@ RenderSettings:
   m_Fog: 1
   m_FogColor: {r: .105804086, g: .0962352529, b: .201492548, a: 1}
   m_FogMode: 3
-  m_FogDensity: .0599999987
+  m_FogDensity: .0500000007
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientLight: {r: .200000003, g: .200000003, b: .200000003, a: 1}
+  m_AmbientLight: {r: .239215687, g: .239215687, b: .239215687, a: 1}
   m_SkyboxMaterial: {fileID: 0}
   m_HaloStrength: .5
   m_FlareStrength: 1
@@ -2211,6 +2211,22 @@ Prefab:
     - target: {fileID: 400000, guid: ee64e287a021e411eaf90c26de8f6b82, type: 2}
       propertyPath: m_LocalPosition.z
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: ee64e287a021e411eaf90c26de8f6b82, type: 2}
+      propertyPath: cringeTime
+      value: .200000003
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: ee64e287a021e411eaf90c26de8f6b82, type: 2}
+      propertyPath: hitPoints
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: ee64e287a021e411eaf90c26de8f6b82, type: 2}
+      propertyPath: fallTime
+      value: .25
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: ee64e287a021e411eaf90c26de8f6b82, type: 2}
+      propertyPath: fallAmount
+      value: 1.20000005
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ee64e287a021e411eaf90c26de8f6b82, type: 2}
@@ -20985,6 +21001,18 @@ Prefab:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: c5c1bcf77958a46b098d0c2ac8c07a37, type: 2}
+      propertyPath: cringeTime
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: c5c1bcf77958a46b098d0c2ac8c07a37, type: 2}
+      propertyPath: fallTime
+      value: .25
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: c5c1bcf77958a46b098d0c2ac8c07a37, type: 2}
+      propertyPath: hitPoints
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c5c1bcf77958a46b098d0c2ac8c07a37, type: 2}
   m_RootGameObject: {fileID: 179389690}
@@ -29521,7 +29549,7 @@ MonoBehaviour:
   fireIterationMin: 1
   fireIterationMax: 3
   fallAmount: 1.20000005
-  fallTime: .100000001
+  fallTime: .25
 --- !u!1 &1510301684
 GameObject:
   m_ObjectHideFlags: 0
@@ -37874,7 +37902,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400022, guid: 513e8acdc90764715b37d488237b414d, type: 2}
       propertyPath: speed
-      value: 150
+      value: 175
       objectReference: {fileID: 0}
     - target: {fileID: 10800000, guid: 513e8acdc90764715b37d488237b414d, type: 2}
       propertyPath: m_Color.g
@@ -39167,7 +39195,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d4aea6e1e6d244638450b3d38f24a02, type: 1}
   m_Name: 
   velocity: {x: 0, y: 0}
-  speed: 150
+  speed: 175
   maxForward: 18
 --- !u!136 &2074802825
 CapsuleCollider:

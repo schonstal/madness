@@ -37,12 +37,12 @@ public class SpitterBrain : MonoBehaviour {
 
     animationManager = GetComponent<SpriteManager>() as SpriteManager;
 
-    animationManager.AddAnimation("Fly", new int[] {0,1,2,3,4,5}, 9f);
+    animationManager.AddAnimation("Fly", new int[] {4,5,0,1,2,3}, 9f);
     animationManager.AddAnimation("Fire", new int[] {7,8,9,10,11,12}, 9f);
     fireIterationMax += 1;
 
-    animationManager.AddAnimation("Die", new int[] {13,6}, 15f, false);
-    animationManager.AddAnimation("Hurt", new int[] {13}, 9f);
+    animationManager.AddAnimation("Die", new int[] {13,14,6}, 15f, false);
+    animationManager.AddAnimation("Hurt", new int[] {13,14}, 10f, false);
 
     animationManager.Play("Fly");
 
@@ -61,7 +61,7 @@ public class SpitterBrain : MonoBehaviour {
         hurt = false;
         hurtTimer = 0;
       }
-      animationManager.Play("Hurt");
+//      animationManager.Play("Hurt", true);
       wasHurt = true;
     } else {
       fireTimer += Time.deltaTime;
@@ -86,6 +86,7 @@ public class SpitterBrain : MonoBehaviour {
       hitPoints -= message.damage;
       hurt = true;
       transform.parent.position += transform.parent.forward * message.knockBack;
+      animationManager.Play("Hurt", true);
 
       if(hitPoints <= 0) {
         fallPosition = transform.position - new Vector3(0,fallAmount,0);
