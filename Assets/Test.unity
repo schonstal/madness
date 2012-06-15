@@ -9324,11 +9324,11 @@ Prefab:
       objectReference: {fileID: 2074802822}
     - target: {fileID: 11400006, guid: ee64e287a021e411eaf90c26de8f6b82, type: 2}
       propertyPath: columns
-      value: 4
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 11400006, guid: ee64e287a021e411eaf90c26de8f6b82, type: 2}
       propertyPath: rows
-      value: 8
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: ee64e287a021e411eaf90c26de8f6b82, type: 2}
       propertyPath: m_LocalRotation.x
@@ -9686,7 +9686,7 @@ Light:
   serializedVersion: 3
   m_Type: 2
   m_Color: {r: .305970132, g: 1, b: .534077942, a: 1}
-  m_Intensity: 1.79999995
+  m_Intensity: 1
   m_Range: 15
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -29953,8 +29953,8 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a6d7c4c72e80145378aba1923a88b8ed, type: 1}
   m_Name: 
-  rows: 8
-  columns: 4
+  rows: 4
+  columns: 8
 --- !u!114 &1508720203
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38291,7 +38291,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400022, guid: 513e8acdc90764715b37d488237b414d, type: 2}
       propertyPath: maxForward
-      value: 10
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 11400036, guid: 513e8acdc90764715b37d488237b414d, type: 2}
       propertyPath: cameraBobMagnitude.y
@@ -39689,7 +39689,7 @@ MonoBehaviour:
   m_Name: 
   velocity: {x: 0, y: 0}
   speed: 300
-  maxForward: 10
+  maxForward: 12
 --- !u!136 &2074802825
 CapsuleCollider:
   m_ObjectHideFlags: 0

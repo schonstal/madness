@@ -11,7 +11,7 @@ public class SpriteManager : MonoBehaviour {
   bool forceRestart = false;
 
 	void Start () {
-    renderer.material.mainTextureScale = new Vector2(1/(float)rows, 1/(float)columns);
+    renderer.material.mainTextureScale = new Vector2(1/(float)columns, 1/(float)rows);
 	}
 	
 	void Update () {
