@@ -15118,7 +15118,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3584c102fbf2f42869a069871b0e6724, type: 1}
   m_Name: 
   survivalTime: 10
-  manager: {fileID: 547535936}
+  manager: {fileID: 803440823}
   sprite: {fileID: 2120201176}
 --- !u!114 &741351605
 MonoBehaviour:
@@ -24239,7 +24239,7 @@ Prefab:
     - target: {fileID: 11400000, guid: 9e588cf05a709488b8edc9ec4277c6f5, type: 2}
       propertyPath: manager
       value: 
-      objectReference: {fileID: 547535936}
+      objectReference: {fileID: 803440823}
     - target: {fileID: 11400002, guid: 9e588cf05a709488b8edc9ec4277c6f5, type: 2}
       propertyPath: target
       value: 
