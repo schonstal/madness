@@ -13682,7 +13682,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 679540225}
   - 33: {fileID: 679540227}
-  - 64: {fileID: 679540228}
   - 23: {fileID: 679540226}
   - 114: {fileID: 679540229}
   m_Layer: 0
@@ -13730,20 +13729,6 @@ MeshFilter:
     type: 2}
   m_PrefabInternal: {fileID: 1161350406}
   m_GameObject: {fileID: 679540224}
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!64 &679540228
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 6400000, guid: 9e588cf05a709488b8edc9ec4277c6f5,
-    type: 2}
-  m_PrefabInternal: {fileID: 1161350406}
-  m_GameObject: {fileID: 679540224}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_SmoothSphereCollisions: 0
-  m_Convex: 0
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!114 &679540229
 MonoBehaviour:
@@ -22915,7 +22900,8 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: .200000003
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6400000, guid: 9e588cf05a709488b8edc9ec4277c6f5, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 9e588cf05a709488b8edc9ec4277c6f5, type: 2}
   m_RootGameObject: {fileID: 808106662}
   m_IsPrefabParent: 0
@@ -24264,7 +24250,8 @@ Prefab:
       propertyPath: m_LocalScale.y
       value: .200000003
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6400000, guid: 9e588cf05a709488b8edc9ec4277c6f5, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 9e588cf05a709488b8edc9ec4277c6f5, type: 2}
   m_RootGameObject: {fileID: 741351602}
   m_IsPrefabParent: 0
@@ -40276,7 +40263,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 2120201177}
   - 33: {fileID: 2120201179}
-  - 64: {fileID: 2120201180}
   - 23: {fileID: 2120201178}
   - 114: {fileID: 2120201181}
   m_Layer: 0
@@ -40324,20 +40310,6 @@ MeshFilter:
     type: 2}
   m_PrefabInternal: {fileID: 1213739434}
   m_GameObject: {fileID: 2120201176}
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!64 &2120201180
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 6400000, guid: 9e588cf05a709488b8edc9ec4277c6f5,
-    type: 2}
-  m_PrefabInternal: {fileID: 1213739434}
-  m_GameObject: {fileID: 2120201176}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_SmoothSphereCollisions: 0
-  m_Convex: 0
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!114 &2120201181
 MonoBehaviour:
