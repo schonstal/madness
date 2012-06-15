@@ -19,7 +19,6 @@ public class Pistol : MonoBehaviour {
 
   SpriteManager spriteManager;
   AudioSource fireSound;
-  RaycastHit hit;
 
   float originalIntensity;
   float originalRange;
@@ -41,12 +40,15 @@ public class Pistol : MonoBehaviour {
 
       //transform.localPosition += new Vector3(0, -0.01f, 0);
 
+      RaycastHit hit;
       if(Physics.Raycast(bulletSpawn.position, bulletSpawn.forward, out hit, 300f, layerMask.value)) {
         Debug.DrawLine(transform.position, hit.point, Color.magenta);
-        if(hit.transform.tag != "Enemy") {
-          sparkManager.GetComponent<SparkManager>().SpawnSpark(hit.point);
-        } else {
+        if(hit.transform.CompareTag("Enemy")) {
+          Debug.Log("hey");
           squibManager.GetComponent<SparkManager>().SpawnSpark(hit.point);
+        } else {
+          Debug.Log("ho");
+          sparkManager.GetComponent<SparkManager>().SpawnSpark(hit.point);
         }
         hit.collider.BroadcastMessage("ApplyDamage", damage, SendMessageOptions.DontRequireReceiver);
       }

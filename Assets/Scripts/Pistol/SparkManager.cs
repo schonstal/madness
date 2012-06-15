@@ -7,7 +7,7 @@ public class SparkManager : MonoBehaviour {
 
   Stack<Spark> inactiveSparks;
 
-	void Start() {
+	void Awake() {
     inactiveSparks = new Stack<Spark>();
 	}
 	
