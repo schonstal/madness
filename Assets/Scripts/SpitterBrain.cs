@@ -37,11 +37,11 @@ public class SpitterBrain : MonoBehaviour {
 
     animationManager = GetComponent<SpriteManager>() as SpriteManager;
 
-    animationManager.AddAnimation("Fly", new int[] {4,5,0,1,2,3}, 9f);
-    animationManager.AddAnimation("Fire", new int[] {7,8,9,10,11,12}, 9f);
+    animationManager.AddAnimation("Fly", new int[] {0,1,2,3,4,5}, 10f);
+    animationManager.AddAnimation("Fire", new int[] {18,19,20,21,22,23}, 10f);
     fireIterationMax += 1;
 
-    animationManager.AddAnimation("Die", new int[] {13,14,6}, 15f, false);
+    animationManager.AddAnimation("Die", new int[] {8,9,10,11,12,13,14,15,16,17,16}, 15f, false);
     animationManager.AddAnimation("Hurt", new int[] {13,14}, 10f, false);
 
     animationManager.Play("Fly");
