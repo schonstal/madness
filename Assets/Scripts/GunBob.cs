@@ -22,8 +22,8 @@ public class GunBob : MonoBehaviour {
 	}
 	
 	void Update () {
-    bobTimer += Time.deltaTime * 2 * Mathf.PI * bobsPerSecond * 
-        (target.rigidbody.velocity.magnitude/playerMovement.maxForward);
+    float ratio = target.rigidbody.velocity.magnitude/playerMovement.maxForward;
+    bobTimer += Time.deltaTime * 2 * Mathf.PI * bobsPerSecond * (ratio > 1 ? 1 : ratio);
 
     Camera.main.transform.localPosition = new Vector3(
         cameraOriginalPosition.x + cameraBobMagnitude.x * Mathf.Cos(bobTimer),

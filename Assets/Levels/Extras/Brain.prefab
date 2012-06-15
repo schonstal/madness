@@ -12,7 +12,7 @@ GameObject:
   - 114: {fileID: 11400002}
   m_Layer: 14
   m_Name: SpitBallShooter
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28,7 +28,7 @@ GameObject:
   - 114: {fileID: 11400008}
   m_Layer: 14
   m_Name: Brain
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -48,7 +48,7 @@ GameObject:
   - 114: {fileID: 11400004}
   m_Layer: 14
   m_Name: Sprite
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -60,7 +60,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 2.9662624e-07, y: 0, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -150,7 +150,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3f4342f7ff67342b38b97131167c9b3d, type: 1}
   m_Name: 
-  target: {fileID: 400002, guid: 513e8acdc90764715b37d488237b414d, type: 2}
+  target: {fileID: 0}
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -170,7 +170,7 @@ MonoBehaviour:
   fireIterationMin: 1
   fireIterationMax: 3
   fallAmount: 1.20000005
-  fallTime: .100000001
+  fallTime: .25
 --- !u!114 &11400006
 MonoBehaviour:
   m_ObjectHideFlags: 1

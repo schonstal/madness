@@ -30,6 +30,5 @@ public class SpitBall : MonoBehaviour {
   public void Recycle() {
     lifeTimer = 0;
     active = true;
-    Debug.Log("yay");
   }
 }

@@ -8,6 +8,8 @@ public class Pistol : MonoBehaviour {
   public float flashRange = 40f;
 
   public GunMessage damage;
+  public GameObject sparkManager;
+  public GameObject squibManager;
 
   public LayerMask layerMask = -1;
 
@@ -41,6 +43,11 @@ public class Pistol : MonoBehaviour {
 
       if(Physics.Raycast(bulletSpawn.position, bulletSpawn.forward, out hit, 300f, layerMask.value)) {
         Debug.DrawLine(transform.position, hit.point, Color.magenta);
+        if(hit.transform.tag != "Enemy") {
+          sparkManager.GetComponent<SparkManager>().SpawnSpark(hit.point);
+        } else {
+          squibManager.GetComponent<SparkManager>().SpawnSpark(hit.point);
+        }
         hit.collider.BroadcastMessage("ApplyDamage", damage, SendMessageOptions.DontRequireReceiver);
       }
     } else {
