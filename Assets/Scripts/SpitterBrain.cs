@@ -54,14 +54,14 @@ public class SpitterBrain : MonoBehaviour {
     if(hitPoints <= 0) {
       animationManager.Play("Die");
       hurtTimer += Time.deltaTime/fallTime;
-      transform.position = Vector3.Lerp(oldPosition, fallPosition, hurtTimer);
+      //transform.position = Vector3.Lerp(oldPosition, fallPosition, hurtTimer);
     } else if(hurt) {
       hurtTimer += Time.deltaTime;
       if(hurtTimer >= cringeTime && hitPoints > 0) {
         hurt = false;
         hurtTimer = 0;
       }
-//      animationManager.Play("Hurt", true);
+      animationManager.Play("Hurt", true);
       wasHurt = true;
     } else {
       fireTimer += Time.deltaTime;
