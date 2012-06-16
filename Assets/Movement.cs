@@ -15,15 +15,9 @@ public class Movement : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
     velocity.x = velocity.y = 0;	
-    //float vert = Input.GetAxis("Vertical");
-    if(Input.GetKey("w"))
-      velocity.y += 1;
-    if(Input.GetKey("s"))
-      velocity.y -= 1;
-    if(Input.GetKey("a"))
-      velocity.x -= 1;
-    if(Input.GetKey("d"))
-      velocity.x += 1;
+    velocity.y += Mathf.Floor(Input.GetAxisRaw("Vertical"));
+    velocity.x += Mathf.Floor(Input.GetAxisRaw("Horizontal"));
+
     Vector3 force = (transform.forward * velocity.y + transform.right * velocity.x) * speed;
     transform.rigidbody.AddForce(force.x, force.y, force.z); 
 
