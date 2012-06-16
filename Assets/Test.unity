@@ -35277,7 +35277,7 @@ Transform:
   m_PrefabInternal: {fileID: 2007734065}
   m_GameObject: {fileID: 1834235087}
   m_LocalRotation: {x: -1.15202326e-07, y: .707106829, z: -.707106829, w: -1.15202326e-07}
-  m_LocalPosition: {x: 0, y: -.109999999, z: .349999994}
+  m_LocalPosition: {x: 0, y: -.115000002, z: .349999994}
   m_LocalScale: {x: .0199999996, y: 1, z: .0199999996}
   m_LocalEulerAnglesHint: {x: 90, y: 180.000015, z: 0}
   m_Children:
@@ -35321,7 +35321,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6e38a79cd27094f0784729446020b3c2, type: 1}
   m_Name: 
-  magnitude: {x: .0299999993, y: .00800000038}
+  magnitude: {x: .0149999997, y: .00600000005}
   cameraBobMagnitude: {x: .0799999982, y: -.200000003}
   bobsPerSecond: .850000024
   target: {fileID: 2074802821}
@@ -35374,6 +35374,7 @@ MonoBehaviour:
     m_Bits: 16385
   bulletSpawn: {fileID: 1257193801}
   prefab: {fileID: 100002, guid: 999bde5282fb94baf993a8dff37ada0e, type: 2}
+  triggerSensitivity: .5
 --- !u!114 &1834235094
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38266,7 +38267,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400036, guid: 513e8acdc90764715b37d488237b414d, type: 2}
       propertyPath: magnitude.x
-      value: .0299999993
+      value: .0149999997
       objectReference: {fileID: 0}
     - target: {fileID: 11400022, guid: 513e8acdc90764715b37d488237b414d, type: 2}
       propertyPath: maxForward
@@ -38302,7 +38303,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 513e8acdc90764715b37d488237b414d, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -.109999999
+      value: -.115000002
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 513e8acdc90764715b37d488237b414d, type: 2}
       propertyPath: m_LocalPosition.x
@@ -38362,7 +38363,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400036, guid: 513e8acdc90764715b37d488237b414d, type: 2}
       propertyPath: magnitude.y
-      value: .00800000038
+      value: .00600000005
       objectReference: {fileID: 0}
     - target: {fileID: 11400022, guid: 513e8acdc90764715b37d488237b414d, type: 2}
       propertyPath: speed
@@ -38408,6 +38409,14 @@ Prefab:
       propertyPath: squibManager
       value: 
       objectReference: {fileID: 803440821}
+    - target: {fileID: 11400006, guid: 513e8acdc90764715b37d488237b414d, type: 2}
+      propertyPath: triggerSensitivity
+      value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400022, guid: 513e8acdc90764715b37d488237b414d, type: 2}
+      propertyPath: deadZone
+      value: .200000003
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 11400034, guid: 513e8acdc90764715b37d488237b414d, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 513e8acdc90764715b37d488237b414d, type: 2}
@@ -39667,6 +39676,7 @@ GameObject:
   - 114: {fileID: 2074802826}
   - 114: {fileID: 2074802829}
   - 114: {fileID: 2074802830}
+  - 114: {fileID: 2074802827}
   m_Layer: 10
   m_Name: Player
   m_TagString: Untagged
@@ -39717,6 +39727,7 @@ MonoBehaviour:
   velocity: {x: 0, y: 0}
   speed: 300
   maxForward: 12
+  deadZone: .200000003
 --- !u!136 &2074802825
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -39749,6 +39760,17 @@ MonoBehaviour:
   maximumX: 360
   minimumY: -60
   maximumY: 60
+--- !u!114 &2074802827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2074802821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd48dbef3f321234a8688b9ff1c84caa, type: 1}
+  m_Name: 
+  speed: 240
 --- !u!114 &2074802829
 MonoBehaviour:
   m_ObjectHideFlags: 0

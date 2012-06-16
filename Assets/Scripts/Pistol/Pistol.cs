@@ -19,35 +19,34 @@ public class Pistol : MonoBehaviour {
 
   SpriteManager spriteManager;
   AudioSource fireSound;
-
+	  
+  bool wasHeld = false;
+	
   float originalIntensity;
   float originalRange;
 
-	void Start() {
+  void Start() {
     spriteManager = GetComponent<SpriteManager>() as SpriteManager;
     spriteManager.AddAnimation("Fire", new int[] {1,2,3,4,0}, 15f, false);
     spriteManager.AddAnimation("Rest", new int[] {0}, 15f, true);
 
     originalIntensity = light.intensity;
-	}
+  }
 	
-	void Update() {
-    if(Input.GetButtonDown("Fire1")) {
+  void Update() {
+    if(Input.GetButtonDown("Fire1") || Input.GetAxis("Fire1") < 0 && !wasHeld) {
       spriteManager.Play("Fire", true);
       GetComponent<AudioSource>().Play();
       light.intensity = flashIntensity;
       light.range = flashRange;
-
-      //transform.localPosition += new Vector3(0, -0.01f, 0);
+      wasHeld = true;
 
       RaycastHit hit;
       if(Physics.Raycast(bulletSpawn.position, bulletSpawn.forward, out hit, 300f, layerMask.value)) {
         Debug.DrawLine(transform.position, hit.point, Color.magenta);
         if(hit.transform.CompareTag("Enemy")) {
-          Debug.Log("hey");
           squibManager.GetComponent<SparkManager>().SpawnSpark(hit.point);
         } else {
-          Debug.Log("ho");
           sparkManager.GetComponent<SparkManager>().SpawnSpark(hit.point);
         }
         hit.collider.BroadcastMessage("ApplyDamage", damage, SendMessageOptions.DontRequireReceiver);
@@ -57,5 +56,8 @@ public class Pistol : MonoBehaviour {
       light.range = originalRange;
       //spriteManager.Play("Rest");
     }
-	}
+    if(Input.GetAxis("Fire1") == 0) {
+      wasHeld = false;
+    }
+  }
 }
