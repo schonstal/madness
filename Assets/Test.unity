@@ -15144,7 +15144,7 @@ Transform:
   m_GameObject: {fileID: 741351602}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 2.5, z: 2.5}
-  m_LocalScale: {x: .200000003, y: .200000003, z: .100000001}
+  m_LocalScale: {x: .25, y: .25, z: .100000001}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 2120201177}
@@ -16512,7 +16512,7 @@ Transform:
   m_GameObject: {fileID: 808106662}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 2.5, z: 2.5}
-  m_LocalScale: {x: .200000003, y: .200000003, z: .200000003}
+  m_LocalScale: {x: .25, y: .25, z: .25}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 679540225}
@@ -22948,15 +22948,15 @@ Prefab:
       objectReference: {fileID: 679540224}
     - target: {fileID: 400000, guid: 9e588cf05a709488b8edc9ec4277c6f5, type: 2}
       propertyPath: m_LocalScale.x
-      value: .200000003
+      value: .25
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9e588cf05a709488b8edc9ec4277c6f5, type: 2}
       propertyPath: m_LocalScale.y
-      value: .200000003
+      value: .25
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9e588cf05a709488b8edc9ec4277c6f5, type: 2}
       propertyPath: m_LocalScale.z
-      value: .200000003
+      value: .25
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6400000, guid: 9e588cf05a709488b8edc9ec4277c6f5, type: 2}
@@ -24302,11 +24302,11 @@ Prefab:
       objectReference: {fileID: 2100000, guid: 0a4a1929dcb784a81a46c2d109769a6e, type: 2}
     - target: {fileID: 400000, guid: 9e588cf05a709488b8edc9ec4277c6f5, type: 2}
       propertyPath: m_LocalScale.x
-      value: .200000003
+      value: .25
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9e588cf05a709488b8edc9ec4277c6f5, type: 2}
       propertyPath: m_LocalScale.y
-      value: .200000003
+      value: .25
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6400000, guid: 9e588cf05a709488b8edc9ec4277c6f5, type: 2}
