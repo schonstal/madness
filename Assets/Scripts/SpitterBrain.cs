@@ -41,7 +41,7 @@ public class SpitterBrain : MonoBehaviour {
     animationManager.AddAnimation("Fire", new int[] {18,19,20,21,22,23}, 10f);
     fireIterationMax += 1;
 
-    animationManager.AddAnimation("Die", new int[] {8,9,10,11,12,13,14,15,16,17,16}, 15f, false);
+    animationManager.AddAnimation("Die", new int[] {8,9,10,11,12,13,14,15,17,17,16}, 15f, false);
     animationManager.AddAnimation("Hurt", new int[] {6,7}, 10f, false);
 
     animationManager.Play("Fly");
@@ -61,6 +61,7 @@ public class SpitterBrain : MonoBehaviour {
       if(hurtTimer >= cringeTime && hitPoints > 0) {
         hurt = false;
         hurtTimer = 0;
+		fireTimer = 0;
       }
       wasHurt = true;
     } else {
