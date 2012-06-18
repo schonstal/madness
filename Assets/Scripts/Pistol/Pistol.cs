@@ -24,6 +24,9 @@ public class Pistol : MonoBehaviour {
 	
   float originalIntensity;
   float originalRange;
+	
+  float flashTimer;
+  float flashTime = 0.05f;
 
   void Start() {
     spriteManager = GetComponent<SpriteManager>() as SpriteManager;
@@ -34,9 +37,11 @@ public class Pistol : MonoBehaviour {
   }
 	
   void Update() {
+    flashTimer += Time.deltaTime;
     if(Input.GetButtonDown("Fire1") || Input.GetAxis("Fire1") < 0 && !wasHeld) {
       spriteManager.Play("Fire", true);
       GetComponent<AudioSource>().Play();
+      flashTimer = 0;
       light.intensity = flashIntensity;
       light.range = flashRange;
       wasHeld = true;
@@ -51,11 +56,12 @@ public class Pistol : MonoBehaviour {
         }
         hit.collider.BroadcastMessage("ApplyDamage", damage, SendMessageOptions.DontRequireReceiver);
       }
+    } else if(flashTimer <= flashTime) {
+	  light.intensity = flashIntensity - ((flashTimer/flashTime)*flashIntensity);
     } else {
-      light.intensity = originalIntensity;
-      light.range = originalRange;
-      //spriteManager.Play("Rest");
-    }
+ 	  light.intensity = originalIntensity;
+      light.range = originalRange;	
+	}
     if(Input.GetAxis("Fire1") == 0) {
       wasHeld = false;
     }
