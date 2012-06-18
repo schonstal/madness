@@ -29,7 +29,7 @@ public class SpitterBrain : MonoBehaviour {
 
   float hurtTimer = 0;
 
-  float fireTimer = -.05f;
+  float fireTimer = -0.16f;
 
 	void Start () {
     renderer.material.color = new Color(1,0,1);
