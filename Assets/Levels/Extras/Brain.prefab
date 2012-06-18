@@ -60,7 +60,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.9662624e-07, y: 0, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -139,7 +139,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b64d902d7b38a4b9c89ddcfdd1e6b135, type: 1}
   m_Name: 
   speed: 20
-  fireTime: .189999998
+  fireTime: 0
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -163,9 +163,9 @@ MonoBehaviour:
   m_Name: 
   shooterTarget: {fileID: 100000}
   cringeTime: .200000003
-  hitPoints: 15
-  minFireTime: .400000006
-  maxFireTime: 1
+  hitPoints: 20
+  minFireTime: 1.20000005
+  maxFireTime: 1.20000005
   fireTime: 0
   fireIterationMin: 1
   fireIterationMax: 3

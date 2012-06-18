@@ -29,7 +29,7 @@ public class SpitterBrain : MonoBehaviour {
 
   float hurtTimer = 0;
 
-  float fireTimer = 0;
+  float fireTimer = -.05f;
 
 	void Start () {
     renderer.material.color = new Color(1,0,1);
@@ -37,7 +37,7 @@ public class SpitterBrain : MonoBehaviour {
 
     animationManager = GetComponent<SpriteManager>() as SpriteManager;
 
-    animationManager.AddAnimation("Fly", new int[] {0,1,2,3,4,5}, 10f);
+    animationManager.AddAnimation("Fly", new int[] {0,1,2,3,4,5,0,1,20,21,22,23}, 10f);
     animationManager.AddAnimation("Fire", new int[] {18,19,20,21,22,23}, 10f);
     fireIterationMax += 1;
 
@@ -61,11 +61,11 @@ public class SpitterBrain : MonoBehaviour {
       if(hurtTimer >= cringeTime && hitPoints > 0) {
         hurt = false;
         hurtTimer = 0;
-		fireTimer = 0;
+		fireTimer = 0.1f;
       }
       wasHurt = true;
     } else {
-      fireTimer += Time.deltaTime;
+	  fireTimer += Time.deltaTime;
       if(fireTimer >= fireTime) { 
         fireTime = Random.Range(minFireTime, maxFireTime);
         shooter.Fire();
@@ -76,8 +76,7 @@ public class SpitterBrain : MonoBehaviour {
       }
       animationManager.Play("Fly",(wasHurt ? true : false));
       wasHurt = false;
-    }
-
+	  }
 	}
 
   public void ApplyDamage(GunMessage message) {
