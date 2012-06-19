@@ -12,7 +12,7 @@ public class LookAt : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void LateUpdate () {
   	transform.LookAt(target);
     transform.rotation = Camera.main.transform.rotation;//Quaternion.Euler(0, transform.eulerAngles.y, 0);
 	}
