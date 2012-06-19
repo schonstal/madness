@@ -26,7 +26,7 @@ public class Pistol : MonoBehaviour {
   float originalRange;
 	
   float flashTimer;
-  float flashTime = 0.066f; //length of one frame of animation at 15fps
+  float flashTime = 0.055f;
 
   void Start() {
     spriteManager = GetComponent<SpriteManager>() as SpriteManager;
